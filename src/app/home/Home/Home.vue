@@ -28,23 +28,7 @@
       <span :class="$style.smallspan">vision</span>
       <p>To Nurture A Committed Robotics Community<br />By Building Skills To Take On Industry Projects.</p>
     </div>
-
-    <div :class="$style.card" ref="card">
-      <div :class="$style.cover" ref="cover">
-        <h1 :class="$style.title">Project.name</h1>
-        <div :class="$style.info">
-          <p>
-            Etiam magna mauris, lobortis sed felis id, facilisis gravida augue. Donec blandit, purus eu gravida maximus,
-            neque dui luctus libero, sit amet maximus nunc tellus vitae lorem.
-          </p>
-          <p>
-            Etiam magna mauris, lobortis sed felis id, facilisis gravida augue. Donec blandit, purus eu gravida maximus,
-            neque dui luctus libero, sit amet maximus nunc tellus vitae lorem.
-          </p>
-        </div>
-      </div>
-    </div>
-
+    <project-card image="firmware.svg" title="doggo" info="wow"></project-card>
     <home-section image="teamwork.svg" alternative>
       <vue-headline level="2">Projects</vue-headline>
       <br />
@@ -91,6 +75,7 @@ import Stage from '../components/Stage/Stage.vue';
 import HomeSection from '@/app/home/components/HomeSection/HomeSection.vue';
 import { IState } from '@/app/state';
 import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
+import ProjectCard from '@/app/home/components/ProjectCard/ProjectCard.vue';
 
 export default {
   metaInfo: {
@@ -141,6 +126,7 @@ export default {
     VueHeadline,
     HomeSection,
     Stage,
+    ProjectCard,
   },
   computed: {
     ...mapState({
