@@ -1,5 +1,5 @@
 {
-  "currentVersion": "v3.7.2",
+  "currentVersion": "v1.0.0",
   "generators": {
     "blueprintDirectory": "./.vuesion/generators",
     "outputDirectory": "./src/app",
@@ -8,7 +8,7 @@
   },
   "i18n": {
     "defaultLocale": "en",
-    "supportedLocales": ["en", "de", "pt", "zh-cn"]
+    "supportedLocales": ["en"]
   },
   "clean": ["./dist", "./coverage", "./storybook-static"],
   "prettier": {

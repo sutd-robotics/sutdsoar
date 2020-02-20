@@ -6,7 +6,7 @@
     "type": "",
     "url": ""
   },
-  "keywords": [],
+  "keywords": ["vue.js", "vuex", "vuex-persist", "seo", "server-side-rendering", "isomorphic", "progressive-web-app"],
   "author": "James Raphael Tiovalen <jamestiotio@gmail.com>",
   "license": "MIT",
   "homepage": "",
