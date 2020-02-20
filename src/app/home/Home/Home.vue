@@ -1,10 +1,13 @@
 <template>
   <div>
     <stage :disable-particles="disableParticles" />
+
     <home-section image="firmware.svg" alternative>
-      <vue-headline level="2">About Us</vue-headline>
-      <br />
-      <vue-headline level="3"></vue-headline>
+      <div :class="$style.about" ref="about" id="about">
+        <span :class="$style.bigspan">ABOUT US</span>
+        <span :class="$style.smallspan">about us</span>
+      </div>
+      <vue-headline level="3">Lorem Ipsum</vue-headline>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue sodales augue at consectetur. Etiam quis
         euismod lectus.
@@ -23,37 +26,40 @@
         eu mi faucibus, lobortis sem eu, placerat nisi.
       </p>
     </home-section>
-    <div :class="$style.vision" ref="vision">
+
+    <div :class="$style.vision" ref="vision" id="vision">
       <span :class="$style.bigspan">VISION</span>
       <span :class="$style.smallspan">vision</span>
-      <p>To Nurture A Committed Robotics Community<br />By Building Skills To Take On Industry Projects.</p>
+      <p>
+        To Nurture A Committed Robotics Community
+        <br />By Building Skills To Take On Industry Projects.
+      </p>
     </div>
-    <project-card image="firmware.svg" title="doggo" info="wow"></project-card>
-    <home-section image="teamwork.svg" alternative>
-      <vue-headline level="2">Projects</vue-headline>
+    <home-section image="maker.svg" flip>
+      <vue-headline level="3">Lorem Ipsum</vue-headline>
+      <p>Maecenas eget maximus justo. Sed quis sollicitudin mi, nec rutrum turpis.</p>
       <br />
       <vue-headline level="3">Lorem Ipsum</vue-headline>
       <p>
-        Etiam magna mauris, lobortis sed felis id, facilisis gravida augue. Donec blandit, purus eu gravida maximus,
-        neque dui luctus libero, sit amet maximus nunc tellus vitae lorem.
+        Nunc tincidunt consectetur neque, at posuere lectus volutpat quis. Fusce auctor ante ligula, at laoreet diam
+        aliquet at. Donec varius nibh ac turpis hendrerit, id porta tellus fringilla.
       </p>
       <br />
       <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Morbi laoreet porttitor dui, a lacinia mauris commodo ut. Phasellus feugiat, metus nec fermentum faucibus, nisi
-        eros sodales nunc, cursus ultricies ipsum ex ut mi.
-      </p>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Donec sit amet urna ut metus laoreet consectetur at quis mauris. Proin mollis ante non augue efficitur, quis
-        sagittis ante porta.
-      </p>
+      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vitae ullamcorper leo, vel mattis enim.</p>
     </home-section>
 
+    <div :class="$style.title" ref="projects" id="projects">
+      <span :class="$style.bigspan">PROJECTS</span>
+      <span :class="$style.smallspan">projects</span>
+    </div>
+    <project-card image="teamwork.svg" title="doggo" info="wow"></project-card>
+
+    <div :class="$style.title" ref="team" id="team">
+      <span :class="$style.bigspan">THE TEAM</span>
+      <span :class="$style.smallspan">the team</span>
+    </div>
     <home-section image="hangout.svg" flip>
-      <vue-headline level="2">The Team</vue-headline>
-      <br />
       <vue-headline level="3">Lorem Ipsum</vue-headline>
       <p>
         Nam ultrices posuere leo, id tincidunt augue vulputate quis. Mauris rutrum eget odio nec interdum. Nulla eget
@@ -136,6 +142,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss" module>
 @import '~@/app/shared/design-system';
 .vision {
@@ -176,13 +183,11 @@ export default {
   $width: 40rem;
   $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
   $timing: 0.4s 0.15s;
-
   background-color: white;
   width: $width;
   height: $height;
   border-radius: $border-radius;
   overflow: hidden;
-
   margin: 1rem; // remove this when finalizing the webapp
   .cover {
     width: $width;
@@ -190,24 +195,19 @@ export default {
     background-color: $main-color;
     transform: translateX($width);
     transition: $timing $transition;
-
     padding: 2rem;
     .title {
       opacity: 0;
       transition: $timing $transition;
-
       margin: 1rem;
     }
-
     .info {
       margin: 1rem;
-
       opacity: 0;
       transition: $timing $transition;
       transition-delay: 200ms;
     }
   }
-
   &:hover {
     .title,
     .info {
@@ -216,6 +216,58 @@ export default {
     .cover {
       transform: translate(0);
     }
+  }
+}
+
+.about {
+  width: 100%;
+  height: 20vh;
+  background-size: cover;
+
+  text-align: left;
+
+  padding-top: 2rem;
+
+  display: flex;
+  flex-flow: column;
+  .bigspan {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: $header-background-letter-spacing;
+    opacity: $header-background-ghost-opacity;
+  }
+  .smallspan {
+    margin-top: -1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: $header-background-letter-spacing;
+    z-index: 2;
+  }
+}
+
+.title {
+  width: 100%;
+  height: 25vh;
+  background-size: cover;
+
+  text-align: center;
+
+  padding-top: 8rem;
+
+  display: flex;
+  flex-flow: column;
+  .bigspan {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: $header-background-letter-spacing;
+    opacity: $header-background-ghost-opacity;
+  }
+  .smallspan {
+    margin-top: -1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: $header-background-letter-spacing;
+    z-index: 2;
   }
 }
 </style>

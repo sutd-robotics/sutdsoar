@@ -1,9 +1,13 @@
 <template>
   <aside ref="sidebar">
     <button :class="hamburgerCssClasses" type="button" aria-label="menu" @click="open = !open">
-      <span :class="$style.box"> <span :class="$style.inner" /> </span>
+      <span :class="$style.box">
+        <span :class="$style.inner" />
+      </span>
     </button>
-    <div :class="sidebarClasses"><slot /></div>
+    <div :class="sidebarClasses">
+      <slot />
+    </div>
   </aside>
 </template>
 
@@ -61,7 +65,7 @@ export default {
   box-shadow: $sidebar-shadow;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   height: $sidebar-height;
   background: $sidebar-bg;
   color: $sidebar-color;
@@ -69,20 +73,20 @@ export default {
   padding: $sidebar-padding;
   margin: $sidebar-margin;
   overflow-y: scroll;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform $brand-transition-duration ease-in-out;
   width: $sidebar-width;
   -webkit-overflow-scrolling: touch;
 
   &.open {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 
 .hamburger {
   position: fixed;
   top: $space-8 * 1.5;
-  left: $space-20;
+  right: $space-20;
   height: $space-32;
   z-index: $sidebar-index + 1;
   padding: 0;

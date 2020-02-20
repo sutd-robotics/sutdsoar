@@ -1,6 +1,6 @@
 <template>
-  <div :class="$style.stage" ref="stage">
-    <canvas :class="$style.canvas" ref="canvas"> </canvas>
+  <div :class="$style.stage" ref="stage" id="home">
+    <canvas :class="$style.canvas" ref="canvas"></canvas>
 
     <img src="logo.svg" alt="sutdsoar" />
   </div>

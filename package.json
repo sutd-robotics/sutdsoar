@@ -26,7 +26,7 @@
     "generate": "vuesion generate",
     "add": "vuesion add",
     "extract-i18n-messages": "vuesion extract-i18n-messages",
-    "test": "",
+    "test": "vuesion test --coverage",
     "e2e": "vuesion e2e",
     "lint": "vuesion lint",
     "clean": "vuesion clean",
@@ -101,6 +101,11 @@
   "engines": {
     "node": "10.14.1",
     "npm": "6.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "vuesion parallel \"vuesion prettier --staged\" \"npm run lint\" \"npm run test\""
+    }
   },
   "jest": {
     "globals": {

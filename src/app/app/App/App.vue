@@ -9,12 +9,12 @@
         HOME
       </vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">
-        VISION
-      </vue-button>
-      
       <vue-button slot="right" color="primary" @click="buttonOnClickScroll('about')">
         ABOUT
+      </vue-button>
+
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">
+        VISION
       </vue-button>
 
       <vue-button slot="right" color="primary" @click="buttonOnClickScroll('projects')">
@@ -30,10 +30,10 @@
 
     <vue-footer />
 
-    <vue-sidebar>
+    <vue-sidebar id="sidebar" style="display: none;">
       <vue-sidebar-group title="Navigation">
         <vue-sidebar-group-item to="/">
-          <vue-icon-code />
+          <vue-icon-hashtag />
           Home
         </vue-sidebar-group-item>
 
@@ -46,7 +46,7 @@
           <vue-icon-hashtag />
           About
         </vue-sidebar-group-item>
-        
+
         <vue-sidebar-group-item to="/">
           <vue-icon-hashtag />
           Projects
@@ -114,9 +114,7 @@ export default {
   data(): any {
     return {
       isNavigating: false,
-      languages: [
-        { label: 'English', value: 'en' },
-      ],
+      languages: [{ label: 'English', value: 'en' }],
     };
   },
   computed: {
@@ -142,7 +140,7 @@ export default {
     },
     buttonOnClickScroll(loc: any) {
       var section = document.querySelector(`#${loc}`);
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: 'smooth' });
     },
   },
   created() {
