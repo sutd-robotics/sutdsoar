@@ -26,27 +26,24 @@
     <div :class="$style.vision" ref="vision">
       <span :class="$style.bigspan">VISION</span>
       <span :class="$style.smallspan">vision</span>
-      <p>To Nurture A Committed Robotics Community</br>By Building Skills To Take On Industry Projects.</p>
+      <p>To Nurture A Committed Robotics Community<br />By Building Skills To Take On Industry Projects.</p>
     </div>
-    <home-section image="maker.svg" flip>
-      <vue-headline level="2">Vision</vue-headline>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Maecenas eget maximus justo. Sed quis sollicitudin mi, nec rutrum turpis.
-      </p>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Nunc tincidunt consectetur neque, at posuere lectus volutpat quis. Fusce auctor ante ligula, at laoreet diam
-        aliquet at. Donec varius nibh ac turpis hendrerit, id porta tellus fringilla.
-      </p>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vitae ullamcorper leo, vel mattis enim.
-      </p>
-    </home-section>
+
+    <div :class="$style.card" ref="card">
+      <div :class="$style.cover" ref="cover">
+        <h1 :class="$style.title">Project.name</h1>
+        <div :class="$style.info">
+          <p>
+            Etiam magna mauris, lobortis sed felis id, facilisis gravida augue. Donec blandit, purus eu gravida maximus,
+            neque dui luctus libero, sit amet maximus nunc tellus vitae lorem.
+          </p>
+          <p>
+            Etiam magna mauris, lobortis sed felis id, facilisis gravida augue. Donec blandit, purus eu gravida maximus,
+            neque dui luctus libero, sit amet maximus nunc tellus vitae lorem.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <home-section image="teamwork.svg" alternative>
       <vue-headline level="2">Projects</vue-headline>
@@ -184,6 +181,55 @@ export default {
     font-size: 3rem;
     margin-top: 3rem;
     line-height: 6rem;
+  }
+}
+
+.card {
+  $border-radius: 0.2rem;
+  $height: 30rem;
+  $width: 40rem;
+  $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  $timing: 0.4s 0.15s;
+
+  background-color: white;
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  margin: 1rem; // remove this when finalizing the webapp
+  .cover {
+    width: $width;
+    height: $height;
+    background-color: $main-color;
+    transform: translateX($width);
+    transition: $timing $transition;
+
+    padding: 2rem;
+    .title {
+      opacity: 0;
+      transition: $timing $transition;
+
+      margin: 1rem;
+    }
+
+    .info {
+      margin: 1rem;
+
+      opacity: 0;
+      transition: $timing $transition;
+      transition-delay: 200ms;
+    }
+  }
+
+  &:hover {
+    .title,
+    .info {
+      opacity: 1;
+    }
+    .cover {
+      transform: translate(0);
+    }
   }
 }
 </style>
