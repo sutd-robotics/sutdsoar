@@ -3,7 +3,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item>
-          <small>&copy; Copyright {{ year }} - SUTD Organisation of Autonomous Robotics. All rights reserved. Designed by <a href="https://github.com/ulaladungdung">Dody</a>, developed by <a href="https://github.com/jamestiotio">James</a>.</small>
+          <small>&copy; Copyright {{ year }} - SUTD Organisation of Autonomous Robotics. All rights reserved.<br>Designed by <a href="https://github.com/ulaladungdung">Dody</a>, developed by <a href="https://github.com/jamestiotio">James</a> and <a href="https://github.com/ulaladungdung">Dody</a>.</small>
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
