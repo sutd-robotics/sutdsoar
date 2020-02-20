@@ -102,12 +102,6 @@
     "node": "10.14.1",
     "npm": "6.4.1"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "vuesion parallel \"vuesion prettier --staged\" \"npm run lint\" \"npm run test\""
-    }
-  },
   "jest": {
     "globals": {
       "window": true,
