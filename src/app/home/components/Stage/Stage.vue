@@ -1,14 +1,8 @@
 <template>
   <div :class="$style.stage" ref="stage">
-    <canvas :class="$style.canvas" ref="canvas"></canvas>
+    <canvas :class="$style.canvas" ref="canvas"> </canvas>
 
-    <vue-grid>
-      <vue-grid-row>
-        <vue-grid-item class="vueGridItem">
-          <img src="logo.svg" alt="sutdsoar" />
-        </vue-grid-item>
-      </vue-grid-row>
-    </vue-grid>
+    <img src="logo.svg" alt="sutdsoar" />
   </div>
 </template>
 
@@ -74,21 +68,21 @@ export default {
   text-align: center;
   text-shadow: 0 0 5px rgba(15, 15, 15, 0.4);
   padding-top: $space-84;
-
-  img {
-    max-width: 12.8rem;
-  }
-
   h1 {
     margin-bottom: $space-32;
     font-weight: $font-weight-light;
   }
 
-  @include mediaMin(tabletPortrait) {
-    min-height: 50vh;
-    img {
-      max-width: 25.6rem;
-    }
+  img {
+    object-fit: cover;
+    width: 50%;
+    margin: auto;
+
+    // Make the logo exactly at the center
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

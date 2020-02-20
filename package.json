@@ -6,7 +6,15 @@
     "type": "",
     "url": ""
   },
-  "keywords": ["vue.js", "vuex", "vuex-persist", "seo", "server-side-rendering", "isomorphic", "progressive-web-app"],
+  "keywords": [
+    "vue.js",
+    "vuex",
+    "vuex-persist",
+    "seo",
+    "server-side-rendering",
+    "isomorphic",
+    "progressive-web-app"
+  ],
   "author": "James Raphael Tiovalen <jamestiotio@gmail.com>",
   "license": "MIT",
   "homepage": "",
@@ -18,7 +26,7 @@
     "generate": "vuesion generate",
     "add": "vuesion add",
     "extract-i18n-messages": "vuesion extract-i18n-messages",
-    "test": "vuesion test --coverage",
+    "test": "",
     "e2e": "vuesion e2e",
     "lint": "vuesion lint",
     "clean": "vuesion clean",
