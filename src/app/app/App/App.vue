@@ -84,13 +84,11 @@ import VueSelect from '@components/VueSelect/VueSelect.vue';
 import VueIconPuzzlePiece from '@components/icons/VueIconPuzzlePiece/VueIconPuzzlePiece.vue';
 import VueButton from '@components/VueButton/VueButton.vue';
 import VueModal from '@components/VueModal/VueModal.vue';
-import LoginForm from '@shared/modules/auth/LoginForm/LoginForm.vue';
 import { addNotification } from '@components/VueNotificationStack/utils';
 
 export default {
   name: 'App',
   components: {
-    LoginForm,
     VueModal,
     VueButton,
     VueIconPuzzlePiece,

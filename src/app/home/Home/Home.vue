@@ -2,28 +2,42 @@
   <div>
     <stage :disable-particles="disableParticles" />
 
-    <home-section image="firmware.svg" alternative>
-      <div :class="$style.about" ref="about" id="about">
+    <home-section id="about" image="firmware.svg" alternative>
+      <div :class="$style.about" ref="about">
         <span :class="$style.bigspan">ABOUT US</span>
         <span :class="$style.smallspan">about us</span>
       </div>
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue sodales augue at consectetur. Etiam quis
-        euismod lectus.
+      <vue-headline level="3">Who We Are</vue-headline>
+      <p :class="$style.aboutpara">
+        SUTD Organisation of Autonomous Robotics (SOAR) focuses on autonomous robotics platforms, as well as AI and
+        machine learning frameworks.
       </p>
       <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a congue
-        eros, ac condimentum est. Integer lectus eros, pellentesque ac ante eu, rhoncus vulputate nibh. Fusce sed
-        condimentum felis.
+      <p :class="$style.aboutpara">
+        We aim to nurture a committed robotics community by building skills to take on industry projects. The club
+        adopts Robot Operating System (ROS) as the main robotics middleware framework to keep pace with indsutry demands
+        as well as to ensure that our projects are cross-compatible and hardware-agnostic.
       </p>
       <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Proin massa tellus, accumsan at facilisis et, iaculis vel ex. Nunc quis egestas turpis, non congue nisl. Donec
-        eu mi faucibus, lobortis sem eu, placerat nisi.
+      <p :class="$style.aboutpara">
+        SOAR has grown rapidly in the 4 short years, gaining industry recognition in the form of a sponsorship from
+        Lionsbot in 2018. We aim to groom and nurture young robotics engineers who are well-rounded and can tackle a
+        variety of real-world robotics challenges. On top of this, SOAR is active in keeping pace with the industry's
+        appetite through our involvement in events such as Makerfaire Singapore and Singapore Robo Expo. Our members
+        find part-time employment with industry too!
+      </p>
+      <br />
+      <p :class="$style.aboutpara">
+        While we are a very niche club, we welcome people of any background to come and join us on this journey. We
+        believe that robotics should be accessible to everyone and host regular workshops to impart skills and
+        knowledge. In addition, we take on a variety of robotics projects to build our members' skills and club
+        capabilities.
+      </p>
+      <br />
+      <p :class="$style.aboutpara">
+        Interested in joining SOAR? Drop us an email
+        <a href="mailto:soar@club.sutd.edu.sg">here</a> and we will be in
+        touch!
       </p>
     </home-section>
 
@@ -32,45 +46,193 @@
       <span :class="$style.smallspan">vision</span>
       <p>
         To Nurture A Committed Robotics Community
-        <br />By Building Skills To Take On Industry Projects.
+        <br />By Building Skills To Take On Industry Projects
       </p>
     </div>
-    <home-section image="maker.svg" flip>
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>Maecenas eget maximus justo. Sed quis sollicitudin mi, nec rutrum turpis.</p>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Nunc tincidunt consectetur neque, at posuere lectus volutpat quis. Fusce auctor ante ligula, at laoreet diam
-        aliquet at. Donec varius nibh ac turpis hendrerit, id porta tellus fringilla.
-      </p>
-      <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vitae ullamcorper leo, vel mattis enim.</p>
-    </home-section>
 
     <div :class="$style.title" ref="projects" id="projects">
       <span :class="$style.bigspan">PROJECTS</span>
       <span :class="$style.smallspan">projects</span>
     </div>
-    <project-card image="teamwork.svg" title="doggo" info="wow"></project-card>
+    <vue-grid>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card image="sutdoggo.jpg" title="SUTDoggo">
+            <p>
+              SOAR constantly seeks to strive for greater heights and
+              <a
+                href="https://github.com/sutd-robotics/SUTDoggo"
+              >SUTDoggo</a> is the product of the yearning for more.
+              Inspired by
+              <a
+                href="https://github.com/Nate711/StanfordDoggoProject"
+              >Stanford's open-source quadruped robot</a>, we
+              ventured into the realm of legged robots. Despite a small team and a short timeline, the team has managed
+              to recreate the iconic backflipping of Stanford's version. The team is currently developing autonomous
+              capabilities, leveraging on SOAR's existing expertise in ROS and autonomous robots.
+            </p>
+          </project-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card image="momobot.png" title="MOMObot">
+            <p>
+              <a href="https://github.com/methylDragon/momobot">MOMObot</a> was our first foray into autonomous service
+              robots 2 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
+              that is capable of autonomous localisation, even in crowded environments! Developed to carry payloads of
+              up to 50kg, it is a stable autonomous platform for us to develop novel applications for autonomous ground
+              robots.
+              <br />
+              <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
+              featured on
+              <a
+                href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
+              >The Straits Times</a>
+              and
+              <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
+            </p>
+          </project-card>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card image="jessica.jpg" title="Jessica">
+            <p>
+              Jessica is our in-house robot arm that we engineered to serve coffee! Using ROS and 3D printing
+              technologies, we created a robot arm that serves coffee at the push of a button. What started as a budding
+              passion project to learn how to build and develop robotic arm platforms has become a cherished member of
+              SOAR. Jessica has been showcased by the school for multiple events, including at the MINDEF Innovation
+              Symposium 2019 and SUTD Open House. Work still continues as we work to improve Jessica's capabilities.
+              Catch us at our next event to see what Jessica can do next!
+              <br />
+              <br />Check out Jessica being showcased at SUTD's Digital Open House microsite
+              <a
+                href="https://openhouse.sutd.edu.sg/"
+              >here</a>!
+            </p>
+          </project-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card image="sauvc.jpg" title="SAUVC">
+            <p>
+              SOAR actively participates in university level competitions where we are able to benchmark our robots with
+              others in the field. The
+              <a
+                href="https://sauvc.org/"
+              >Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
+              international competition organised by IEEE Singapore, drawing in teams from across the globe. SOAR's 2019
+              team emerged top 15 in the competition, despite many challenges facing the all-freshmore team. The team
+              has grown leaps and bounds in the past year, and is gearing up for SAUVC 2020 this April. Despite the
+              challenging field of underwater robotics, our team has been successful in competing with peers in the
+              region - exploring fields such as computer vision, electronics design and acoustics.
+            </p>
+          </project-card>
+        </vue-grid-item>
+      </vue-grid-row>
+    </vue-grid>
 
     <div :class="$style.title" ref="team" id="team">
       <span :class="$style.bigspan">THE TEAM</span>
       <span :class="$style.smallspan">the team</span>
     </div>
+    <vue-grid>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="dody.jpg"
+            title="Dody Senputra"
+            info="President"
+            link="https://github.com/ulaladungdung"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="james.jpg"
+            title="James Raphael Tiovalen"
+            info="Vice-President"
+            link="https://github.com/jamestiotio"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="kevin.jpg"
+            title="Kevin Ma Yuchen"
+            info="Secretary"
+            link="https://github.com/Kevinskwk"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="wahkit.jpg"
+            title="Chung Wah Kit"
+            info="Treasurer"
+            link="https://github.com/sdencanted"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="wenkang.jpg"
+            title="Wong Wen Kang"
+            info="Programme Director"
+            link="https://github.com/1487quantum"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="haolan.jpg"
+            title="He Haolan"
+            info="Project Manager"
+            link="https://github.com/darthnoward"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="yanle.jpg"
+            title="Lui Yan Le"
+            info="Marketing Director"
+            link="https://github.com/YanLeee0217"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
+    </vue-grid>
+
+    <div :class="$style.title" ref="family" id="family">
+      <span :class="$style.bigspan">THE FAMILY</span>
+      <span :class="$style.smallspan">the family</span>
+    </div>
+    <div :class="$style.family">
+      <img src="soarfamily.jpg" />
+    </div>
+
     <home-section image="hangout.svg" flip>
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Nam ultrices posuere leo, id tincidunt augue vulputate quis. Mauris rutrum eget odio nec interdum. Nulla eget
-        arcu at mauris hendrerit commodo.
-      </p>
+      <vue-headline level="3">Join Us!</vue-headline>
       <br />
-      <vue-headline level="3">Lorem Ipsum</vue-headline>
-      <p>
-        Sed eu nunc tristique, tempus justo ut, placerat nisi. Ut tempus a diam eget porttitor. Curabitur aliquet
-        pretium mi in sagittis. Donec ac felis turpis.
-      </p>
+      <vue-headline level="3">
+        Email:
+        <a href="mailto:soar@club.sutd.edu.sg">soar@club.sutd.edu.sg</a>
+      </vue-headline>
+      <vue-headline level="3">
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/company/sutd-organisation-of-autonomous-robotics"
+        >SUTD Organisation of Autonomous Robotics</a>
+      </vue-headline>
+      <vue-headline level="3">
+        Instagram:
+        <a href="https://instagram.com/sutdsoar">@sutdsoar</a>
+      </vue-headline>
+      <vue-headline level="3">
+        GitHub:
+        <a href="https://github.com/sutd-robotics">@sutd-robotics</a>
+      </vue-headline>
+      <vue-headline level="3">
+        Facebook:
+        <a href="https://www.facebook.com/SUTDRobotics">@SUTDRobotics</a>
+      </vue-headline>
+      <br />
     </home-section>
   </div>
 </template>
@@ -82,6 +244,11 @@ import HomeSection from '@/app/home/components/HomeSection/HomeSection.vue';
 import { IState } from '@/app/state';
 import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 import ProjectCard from '@/app/home/components/ProjectCard/ProjectCard.vue';
+import TeamCard from '@/app/home/components/TeamCard/TeamCard.vue';
+import VueGrid from '@/app/shared/components/VueGrid/VueGrid.vue';
+import VueGridRow from '@/app/shared/components/VueGridRow/VueGridRow.vue';
+import VueGridItem from '@/app/shared/components/VueGridItem/VueGridItem.vue';
+import VueIconGithub from '@components/icons/VueIconGithub/VueIconGithub.vue';
 
 export default {
   metaInfo: {
@@ -133,6 +300,11 @@ export default {
     HomeSection,
     Stage,
     ProjectCard,
+    TeamCard,
+    VueGrid,
+    VueGridRow,
+    VueGridItem,
+    VueIconGithub,
   },
   computed: {
     ...mapState({
@@ -177,48 +349,6 @@ export default {
   }
 }
 
-.card {
-  $border-radius: 0.2rem;
-  $height: 30rem;
-  $width: 40rem;
-  $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
-  $timing: 0.4s 0.15s;
-  background-color: white;
-  width: $width;
-  height: $height;
-  border-radius: $border-radius;
-  overflow: hidden;
-  margin: 1rem; // remove this when finalizing the webapp
-  .cover {
-    width: $width;
-    height: $height;
-    background-color: $main-color;
-    transform: translateX($width);
-    transition: $timing $transition;
-    padding: 2rem;
-    .title {
-      opacity: 0;
-      transition: $timing $transition;
-      margin: 1rem;
-    }
-    .info {
-      margin: 1rem;
-      opacity: 0;
-      transition: $timing $transition;
-      transition-delay: 200ms;
-    }
-  }
-  &:hover {
-    .title,
-    .info {
-      opacity: 1;
-    }
-    .cover {
-      transform: translate(0);
-    }
-  }
-}
-
 .about {
   width: 100%;
   height: 20vh;
@@ -245,6 +375,10 @@ export default {
   }
 }
 
+.aboutpara {
+  text-align: justify;
+}
+
 .title {
   width: 100%;
   height: 25vh;
@@ -269,5 +403,31 @@ export default {
     letter-spacing: $header-background-letter-spacing;
     z-index: 2;
   }
+}
+
+.family img {
+  object-fit: cover;
+  width: 80%;
+  margin: auto;
+  border: none;
+
+  // Make the logo exactly at the center
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  color: $footer-link-color;
+  font-weight: $footer-link-font-weight;
+
+  &:hover {
+    color: $footer-link-hover-color;
+  }
+}
+
+.centeritem {
+  text-align: center;
 }
 </style>

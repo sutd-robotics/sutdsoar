@@ -1,11 +1,13 @@
 <template>
   <div :class="$style.card" :style="{ 'background-image': 'url(' + image + ')' }" ref="card">
-    <div :class="$style.cover" ref="cover">
-      <h1 :class="$style.title">{{ title }}</h1>
-      <div :class="$style.info">
-        <slot />
+    <a :href="link">
+      <div :class="$style.cover" ref="cover">
+        <h1 :class="$style.title">{{ title }}</h1>
+        <div :class="$style.info">
+          <p>{{ info }}</p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -23,6 +25,14 @@ export default {
       type: String,
       required: true,
     },
+    info: {
+      type: String,
+      required: true,
+    },
+    link: {
+      type: String,
+      required: true,
+    },
     image: {
       type: String,
       required: true,
@@ -36,8 +46,8 @@ export default {
 
 .card {
   $border-radius: 0.2rem;
-  $height: 42rem;
-  $width: 50rem;
+  $height: 30rem;
+  $width: 20rem;
   $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
   $timing: 0.4s 0.15s;
 
@@ -56,24 +66,24 @@ export default {
     width: $width;
     height: $height;
     background-color: $main-color;
-    transform: translateX($width);
+    transform: translateY($height);
     transition: $timing $transition;
 
-    padding: 2rem;
+    padding: 0.2rem;
     .title {
       opacity: 0;
       transition: $timing $transition;
 
-      margin: 1rem;
+      margin: 0.3rem;
     }
 
     .info {
-      margin: 1rem;
+      margin: 0.3rem;
 
       opacity: 0;
       transition: $timing $transition;
       transition-delay: 200ms;
-      text-align: justify;
+      font-style: italic;
     }
   }
 
@@ -83,7 +93,7 @@ export default {
       opacity: 1;
     }
     .cover {
-      transform: translate(0);
+      transform: translateY($height - 6rem);
     }
   }
 }
