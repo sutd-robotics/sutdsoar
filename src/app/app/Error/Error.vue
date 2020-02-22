@@ -10,7 +10,7 @@ import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 
 export default {
   metaInfo: {
-    title: 'sutdsoar - an error occurred',
+    title: 'sutdsoar - An error occurred!',
     meta: [
       {
         name: 'robots',
