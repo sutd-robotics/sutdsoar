@@ -3,6 +3,7 @@
     <stage :disable-particles="disableParticles" />
 
     <home-section id="about" image="firmware.svg" alternative>
+      <a name="about"></a>
       <div :class="$style.about" ref="about">
         <span :class="$style.bigspan">ABOUT US</span>
         <span :class="$style.smallspan">about us</span>
@@ -41,6 +42,7 @@
     </home-section>
 
     <div :class="$style.vision" ref="vision" id="vision">
+      <a name="vision"></a>
       <span :class="$style.bigspan">VISION</span>
       <span :class="$style.smallspan">vision</span>
       <p>
@@ -50,13 +52,14 @@
     </div>
 
     <div :class="$style.title" ref="projects" id="projects">
+      <a name="projects"></a>
       <span :class="$style.bigspan">PROJECTS</span>
       <span :class="$style.smallspan">projects</span>
     </div>
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card image="sutdoggo.jpg" title="SUTDoggo">
+          <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="SUTDoggo">
             <p>
               SOAR constantly seeks to strive for greater heights and
               <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
@@ -69,7 +72,7 @@
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card image="momobot.png" title="MOMObot">
+          <project-card :class="$style.cardsize" image="momobot.png" title="MOMObot">
             <p>
               <a href="https://github.com/methylDragon/momobot">MOMObot</a> was our first foray into autonomous service
               robots 2 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
@@ -90,7 +93,7 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card image="jessica.jpg" title="Jessica">
+          <project-card :class="$style.cardsize" image="jessica.jpg" title="Jessica">
             <p>
               Jessica is our in-house robot arm that we engineered to serve coffee! Using ROS and 3D printing
               technologies, we created a robot arm that serves coffee at the push of a button. What started as a budding
@@ -105,7 +108,7 @@
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card image="sauvc.jpg" title="SAUVC">
+          <project-card :class="$style.cardsize" image="sauvc.jpg" title="SAUVC">
             <p>
               SOAR actively participates in university level competitions where we are able to benchmark our robots with
               others in the field. The
@@ -122,6 +125,7 @@
     </vue-grid>
 
     <div :class="$style.title" ref="team" id="team">
+      <a name="team"></a>
       <span :class="$style.bigspan">THE TEAM</span>
       <span :class="$style.smallspan">the team</span>
     </div>
@@ -143,8 +147,6 @@
             link="https://github.com/jamestiotio"
           ></team-card>
         </vue-grid-item>
-      </vue-grid-row>
-      <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="kevin.jpg"
@@ -153,6 +155,8 @@
             link="https://github.com/Kevinskwk"
           ></team-card>
         </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="wahkit.jpg"
@@ -161,8 +165,6 @@
             link="https://github.com/sdencanted"
           ></team-card>
         </vue-grid-item>
-      </vue-grid-row>
-      <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="wenkang.jpg"
@@ -276,7 +278,6 @@ export default {
         content: 'SOAR Website',
       },
       { name: 'og:image', content: 'https://soar.opensutd.org/logo-colored.svg' },
-      { name: 'og:image:url', content: 'https://soar.opensutd.org/logo-colored.svg' },
 
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:creator', content: '@jamestiotio' },
@@ -329,6 +330,7 @@ export default {
   text-align: center;
 
   padding-top: 14rem;
+  margin-bottom: 14rem;
 
   display: flex;
   flex-flow: column;
@@ -349,6 +351,12 @@ export default {
     font-size: 3rem;
     margin-top: 3rem;
     line-height: 6rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .vision {
+    margin-bottom: 30rem;
   }
 }
 
@@ -414,7 +422,7 @@ export default {
   margin: auto;
   border: none;
 
-  // Make the logo exactly at the center
+  // Make the image exactly at the center
   position: relative;
   top: 50%;
   left: 50%;
@@ -432,5 +440,12 @@ a {
 
 .centeritem {
   text-align: center;
+}
+
+@media (max-width: 40rem) {
+  .cardsize {
+    height: 60rem;
+    width: 33rem;
+  }
 }
 </style>

@@ -4,58 +4,33 @@
 
     <vue-navigation-progress :is-navigating="isNavigating" />
 
-    <vue-nav-bar>
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('home')">
-        HOME
-      </vue-button>
+    <vue-nav-bar :class="$style.navbar">
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('home')">HOME</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('about')">
-        ABOUT
-      </vue-button>
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('about')">ABOUT</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">
-        VISION
-      </vue-button>
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">VISION</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('projects')">
-        PROJECTS
-      </vue-button>
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('projects')">PROJECTS</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('team')">
-        TEAM
-      </vue-button>
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('team')">TEAM</vue-button>
     </vue-nav-bar>
 
     <router-view :class="$style.content" />
 
     <vue-footer />
 
-    <vue-sidebar id="sidebar" style="display: none;">
+    <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="/">
-          <vue-icon-hashtag />
-          Home
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag />Home </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="/">
-          <vue-icon-hashtag />
-          Vision
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag />About </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="/">
-          <vue-icon-hashtag />
-          About
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#vision"> <vue-icon-hashtag />Vision </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="/">
-          <vue-icon-hashtag />
-          Projects
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#projects"> <vue-icon-hashtag />Projects </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="/">
-          <vue-icon-hashtag />
-          Team
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag />Team </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
@@ -167,5 +142,31 @@ export default {
   top: $space-4;
   width: $space-24;
   height: $space-24;
+}
+
+.navbar {
+  display: inline;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (max-width: 505px) {
+  .navbar {
+    display: none;
+  }
+  .sidebar {
+    display: inline;
+  }
+}
+
+@media (min-width: 506px) {
+  .navbar {
+    display: inline;
+  }
+  .sidebar {
+    display: none;
+  }
 }
 </style>

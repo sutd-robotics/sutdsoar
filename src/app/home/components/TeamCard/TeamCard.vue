@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.card" :style="{ 'background-image': 'url(' + image + ')' }" ref="card">
-    <a :href="link">
+    <a :class="$style.url" :href="link">
       <div :class="$style.cover" ref="cover">
         <h1 :class="$style.title">{{ title }}</h1>
         <div :class="$style.info">
@@ -63,8 +63,8 @@ export default {
 
   margin: 1rem; // remove this when finalizing the webapp
   .cover {
-    width: $width;
-    height: $height;
+    width: 100%;
+    height: 100%;
     background-color: $main-color;
     transform: translateY($height);
     transition: $timing $transition;
@@ -82,7 +82,7 @@ export default {
 
       opacity: 0;
       transition: $timing $transition;
-      transition-delay: 200ms;
+      transition-delay: 500ms;
       font-style: italic;
     }
   }
@@ -93,8 +93,12 @@ export default {
       opacity: 1;
     }
     .cover {
-      transform: translateY($height - 6rem);
+      transform: translateY(calc(100% - 6rem));
     }
   }
+}
+
+.url {
+  text-decoration: none;
 }
 </style>

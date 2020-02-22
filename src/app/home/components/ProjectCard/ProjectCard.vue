@@ -52,14 +52,23 @@ export default {
   display: inline-block;
 
   margin: 1rem; // remove this when finalizing the webapp
+
   .cover {
-    width: $width;
-    height: $height;
+    width: 100%;
+    height: 100%;
     background-color: $main-color;
     transform: translateX($width);
     transition: $timing $transition;
 
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
     .title {
       opacity: 0;
       transition: $timing $transition;
@@ -72,7 +81,7 @@ export default {
 
       opacity: 0;
       transition: $timing $transition;
-      transition-delay: 200ms;
+      transition-delay: 300ms;
       text-align: justify;
     }
   }
