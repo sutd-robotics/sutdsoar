@@ -8,15 +8,15 @@
 
 ## Usage
 
-- Dev:
+- Development:
 
   1. Fix a cache issue: `npm config set cache "C:\Users\Firstname~1\AppData\Roaming\npm-cache" --global` or `npm config set cache C:\tmp\nodejs\npm-cache --global`
-  2. Download or clone this repository
-  3. Change directory: `cd sutdsoar`
-  4. Install dependencies: `npm install`
-  5. Run `npm run dev`
+  1. Download or clone this repository
+  1. Change directory: `cd sutdsoar`
+  1. Install dependencies: `npm install`
+  1. Run `npm run dev`
 
-- Prod:
+- Production:
   
   - Netlify (CSR SPA):
     
@@ -28,7 +28,7 @@
     - Branch deploys: `Deploy only the production branch`
     - Build image: `Ubuntu Xenial 16.04 (default)`
     - Asset optimization: `Pretty URLs`, `Bundle CSS`, `Minify CSS`, `Bundle JS`, `Minify JS` and `Compress Images`
-    - Custom domain: `sutdsoar.netlify.com` and (`sutdsoar.com` or `soar.opensutd.org`)
+    - Custom domain: `sutdsoar.netlify.com` and `soar.opensutd.org`
   
   - Heroku/AWS (SSR PWA):
   
