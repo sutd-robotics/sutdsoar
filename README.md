@@ -4,22 +4,22 @@
 <img width="420px" src="src/static/logo-colored.svg" alt="SUTD SOAR"/>
 </p>
 
-<p align="center"><a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a></p>
+<p align="center"><a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a> <a href="https://app.netlify.com/sites/sutdsoar/deploys"><img src="https://api.netlify.com/api/v1/badges/6cb418d5-1817-41c1-8336-7a984c495843/deploy-status"></a></p>
 
 ## Usage
 
 - Development:
 
   1. Fix a cache issue: `npm config set cache "C:\Users\Firstname~1\AppData\Roaming\npm-cache" --global` or `npm config set cache C:\tmp\nodejs\npm-cache --global`
-  1. Download or clone this repository
-  1. Change directory: `cd sutdsoar`
-  1. Install dependencies: `npm install`
-  1. Run `npm run dev`
+  2. Download or clone this repository
+  3. Change directory: `cd sutdsoar`
+  4. Install dependencies: `npm install`
+  5. Run `npm run dev`
 
 - Production:
-  
+
   - Netlify (CSR SPA):
-    
+
     - Build command: `npm run build:spa`
     - Publish directory: `dist`
     - Deploy log visibility: `Private logs`
@@ -29,9 +29,9 @@
     - Build image: `Ubuntu Xenial 16.04 (default)`
     - Asset optimization: `Pretty URLs`, `Bundle CSS`, `Minify CSS`, `Bundle JS`, `Minify JS` and `Compress Images`
     - Custom domain: `sutdsoar.netlify.com` and `soar.opensutd.org`
-  
+
   - Heroku/AWS (SSR PWA):
-  
+
     - Coming soon!
 
 ## License

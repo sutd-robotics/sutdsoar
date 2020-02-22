@@ -36,8 +36,7 @@
       <br />
       <p :class="$style.aboutpara">
         Interested in joining SOAR? Drop us an email
-        <a href="mailto:soar@club.sutd.edu.sg">here</a> and we will be in
-        touch!
+        <a href="mailto:soar@club.sutd.edu.sg">here</a> and we will be in touch!
       </p>
     </home-section>
 
@@ -60,13 +59,9 @@
           <project-card image="sutdoggo.jpg" title="SUTDoggo">
             <p>
               SOAR constantly seeks to strive for greater heights and
-              <a
-                href="https://github.com/sutd-robotics/SUTDoggo"
-              >SUTDoggo</a> is the product of the yearning for more.
+              <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
               Inspired by
-              <a
-                href="https://github.com/Nate711/StanfordDoggoProject"
-              >Stanford's open-source quadruped robot</a>, we
+              <a href="https://github.com/Nate711/StanfordDoggoProject">Stanford's open-source quadruped robot</a>, we
               ventured into the realm of legged robots. Despite a small team and a short timeline, the team has managed
               to recreate the iconic backflipping of Stanford's version. The team is currently developing autonomous
               capabilities, leveraging on SOAR's existing expertise in ROS and autonomous robots.
@@ -84,9 +79,9 @@
               <br />
               <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
               featured on
-              <a
-                href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
-              >The Straits Times</a>
+              <a href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
+                >The Straits Times</a
+              >
               and
               <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
             </p>
@@ -105,9 +100,7 @@
               Catch us at our next event to see what Jessica can do next!
               <br />
               <br />Check out Jessica being showcased at SUTD's Digital Open House microsite
-              <a
-                href="https://openhouse.sutd.edu.sg/"
-              >here</a>!
+              <a href="https://openhouse.sutd.edu.sg/">here</a>!
             </p>
           </project-card>
         </vue-grid-item>
@@ -116,9 +109,7 @@
             <p>
               SOAR actively participates in university level competitions where we are able to benchmark our robots with
               others in the field. The
-              <a
-                href="https://sauvc.org/"
-              >Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
+              <a href="https://sauvc.org/">Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
               international competition organised by IEEE Singapore, drawing in teams from across the globe. SOAR's 2019
               team emerged top 15 in the competition, despite many challenges facing the all-freshmore team. The team
               has grown leaps and bounds in the past year, and is gearing up for SAUVC 2020 this April. Despite the
@@ -216,9 +207,9 @@
       </vue-headline>
       <vue-headline level="3">
         LinkedIn:
-        <a
-          href="https://www.linkedin.com/company/sutd-organisation-of-autonomous-robotics"
-        >SUTD Organisation of Autonomous Robotics</a>
+        <a href="https://www.linkedin.com/company/sutd-organisation-of-autonomous-robotics"
+          >SUTD Organisation of Autonomous Robotics</a
+        >
       </vue-headline>
       <vue-headline level="3">
         Instagram:
@@ -256,7 +247,11 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'sutdsoar - SUTD Organisation of Autonomous Robotics Website',
+        content: 'SOAR Website',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, shrink-to-fit=no',
       },
       {
         name: 'robots',
@@ -266,33 +261,41 @@ export default {
         name: 'keywords',
         content: 'vue.js, vuex, vuex-persist, seo, server-side-rendering, isomorphic, progressive-web-app',
       },
+      { name: 'image', content: 'https://soar.opensutd.org/logo-colored.svg' },
 
-      { name: 'og:url', content: 'https://sutdsoar.herokuapp.com/' },
+      { name: 'og:url', content: 'https://soar.opensutd.org/' },
       { name: 'og:site_name', content: 'sutdsoar' },
       { name: 'og:type', content: 'website' },
       { name: 'og:locale', content: 'en' },
       {
         name: 'og:title',
-        content: 'sutdsoar - SUTD Organisation of Autonomous Robotics Website',
+        content: 'SUTD Organisation of Autonomous Robotics',
       },
       {
         name: 'og:description',
-        content: 'sutdsoar - SUTD Organisation of Autonomous Robotics Website',
+        content: 'SOAR Website',
       },
-      { name: 'og:image:url', content: 'https://sutdsoar.herokuapp.com/logo.svg' },
+      { name: 'og:image', content: 'https://soar.opensutd.org/logo-colored.svg' },
+      { name: 'og:image:url', content: 'https://soar.opensutd.org/logo-colored.svg' },
 
-      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:creator', content: '@jamestiotio' },
       {
         name: 'twitter:title',
-        content: 'sutdsoar - SUTD Organisation of Autonomous Robotics Website',
+        content: 'SUTD Organisation of Autonomous Robotics',
       },
-      { name: 'twitter:url', content: 'https://sutdsoar.herokuapp.com/' },
-      { name: 'twitter:image', content: 'https://sutdsoar.herokuapp.com/logo.svg' },
+      { name: 'twitter:url', content: 'https://soar.opensutd.org' },
+      { name: 'twitter:image', content: 'https://soar.opensutd.org/logo-colored.svg' },
       {
         name: 'twitter:description',
-        content: 'sutdsoar - SUTD Organisation of Autonomous Robotics Website',
+        content: 'SOAR Website',
       },
+
+      { name: 'application-name', content: 'SUTD Organisation of Autonomous Robotics Website' },
+      { name: 'apple-mobile-web-app-title', content: 'SUTD Organisation of Autonomous Robotics Website' },
+      { name: 'msapplication-TileColor', content: '#000000' },
+      { name: 'theme-color', content: '#ffffff' },
+      { name: 'msapplication-TileImage', content: 'https://soar.opensutd.org/icon-144x144.png' },
     ],
   },
   components: {
