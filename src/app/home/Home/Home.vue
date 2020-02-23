@@ -442,10 +442,17 @@ a {
   text-align: center;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 505px) {
   .cardsize {
     height: 60rem;
     width: 33rem;
+  }
+}
+
+@media (min-width: 505px) {
+  .cardsize {
+    height: 42rem;
+    width: 50rem;
   }
 }
 </style>
