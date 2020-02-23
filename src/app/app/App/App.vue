@@ -22,25 +22,15 @@
 
     <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="#home">
-          <vue-icon-hashtag />Home
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag />Home </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#about">
-          <vue-icon-hashtag />About
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag />About </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#vision">
-          <vue-icon-hashtag />Vision
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#vision"> <vue-icon-hashtag />Vision </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#projects">
-          <vue-icon-hashtag />Projects
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#projects"> <vue-icon-hashtag />Projects </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#team">
-          <vue-icon-hashtag />Team
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag />Team </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
@@ -154,21 +144,21 @@ export default {
   height: $space-24;
 }
 
-@media (max-width: 505px) {
+@media (min-width: 505px) {
   .navbar {
-    display: none;
+    display: block !important;
   }
   .sidebar {
-    display: inline;
+    display: none !important;
   }
 }
 
-@media (min-width: 505px) {
+@media (max-width: 505px) {
   .navbar {
-    display: inline;
+    display: none !important;
   }
   .sidebar {
-    display: none;
+    display: block !important;
   }
 }
 </style>

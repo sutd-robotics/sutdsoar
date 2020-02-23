@@ -253,7 +253,7 @@ export default {
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        content: 'width=device-width, initial-scale=1',
       },
       {
         name: 'robots',
@@ -442,17 +442,17 @@ a {
   text-align: center;
 }
 
-@media (max-width: 505px) {
+@media (min-width: 505px) {
   .cardsize {
-    height: 60rem;
-    width: 33rem;
+    height: 42rem !important;
+    width: 50rem !important;
   }
 }
 
-@media (min-width: 505px) {
+@media (max-width: 505px) {
   .cardsize {
-    height: 42rem;
-    width: 50rem;
+    height: 60rem !important;
+    width: 33rem !important;
   }
 }
 </style>
