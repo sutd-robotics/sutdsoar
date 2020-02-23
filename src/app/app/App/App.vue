@@ -22,15 +22,25 @@
 
     <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag />Home </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#home">
+          <vue-icon-hashtag />Home
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag />About </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#about">
+          <vue-icon-hashtag />About
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#vision"> <vue-icon-hashtag />Vision </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#vision">
+          <vue-icon-hashtag />Vision
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#projects"> <vue-icon-hashtag />Projects </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#projects">
+          <vue-icon-hashtag />Projects
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag />Team </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#team">
+          <vue-icon-hashtag />Team
+        </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
@@ -144,14 +154,6 @@ export default {
   height: $space-24;
 }
 
-.navbar {
-  display: inline;
-}
-
-.sidebar {
-  display: none;
-}
-
 @media (max-width: 505px) {
   .navbar {
     display: none;
@@ -161,7 +163,7 @@ export default {
   }
 }
 
-@media (min-width: 506px) {
+@media (min-width: 505px) {
   .navbar {
     display: inline;
   }
