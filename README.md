@@ -4,7 +4,7 @@
 <img width="420px" src="src/static/logo-colored.svg" alt="SUTD SOAR"/>
 </p>
 
-<p align="center"><a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a> <a href="https://app.netlify.com/sites/sutdsoar/deploys"><img src="https://api.netlify.com/api/v1/badges/6cb418d5-1817-41c1-8336-7a984c495843/deploy-status"></a></p>
+<p align="center"><a href="LICENSE" ><img src="https://img.shields.io/github/license/sutd-robotics/sutdsoar?style=for-the-badge"/></a> <a href="https://app.netlify.com/sites/sutdsoar/deploys"><img src="https://api.netlify.com/api/v1/badges/6cb418d5-1817-41c1-8336-7a984c495843/deploy-status"></a></p>
 
 ## Usage
 

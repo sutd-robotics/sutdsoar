@@ -62,9 +62,13 @@
           <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="SUTDoggo">
             <p>
               SOAR constantly seeks to strive for greater heights and
-              <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
+              <a
+                href="https://github.com/sutd-robotics/SUTDoggo"
+              >SUTDoggo</a> is the product of the yearning for more.
               Inspired by
-              <a href="https://github.com/Nate711/StanfordDoggoProject">Stanford's open-source quadruped robot</a>, we
+              <a
+                href="https://github.com/Nate711/StanfordDoggoProject"
+              >Stanford's open-source quadruped robot</a>, we
               ventured into the realm of legged robots. Despite a small team and a short timeline, the team has managed
               to recreate the iconic backflipping of Stanford's version. The team is currently developing autonomous
               capabilities, leveraging on SOAR's existing expertise in ROS and autonomous robots.
@@ -82,9 +86,9 @@
               <br />
               <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
               featured on
-              <a href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
-                >The Straits Times</a
-              >
+              <a
+                href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
+              >The Straits Times</a>
               and
               <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
             </p>
@@ -103,7 +107,9 @@
               Catch us at our next event to see what Jessica can do next!
               <br />
               <br />Check out Jessica being showcased at SUTD's Digital Open House microsite
-              <a href="https://openhouse.sutd.edu.sg/">here</a>!
+              <a
+                href="https://openhouse.sutd.edu.sg/"
+              >here</a>!
             </p>
           </project-card>
         </vue-grid-item>
@@ -112,7 +118,9 @@
             <p>
               SOAR actively participates in university level competitions where we are able to benchmark our robots with
               others in the field. The
-              <a href="https://sauvc.org/">Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
+              <a
+                href="https://sauvc.org/"
+              >Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
               international competition organised by IEEE Singapore, drawing in teams from across the globe. SOAR's 2019
               team emerged top 15 in the competition, despite many challenges facing the all-freshmore team. The team
               has grown leaps and bounds in the past year, and is gearing up for SAUVC 2020 this April. Despite the
@@ -204,26 +212,46 @@
       <vue-headline level="3">Join Us!</vue-headline>
       <br />
       <vue-headline level="3">
-        Email:
-        <a href="mailto:soar@club.sutd.edu.sg">soar@club.sutd.edu.sg</a>
-      </vue-headline>
-      <vue-headline level="3">
-        LinkedIn:
-        <a href="https://www.linkedin.com/company/sutd-organisation-of-autonomous-robotics"
-          >SUTD Organisation of Autonomous Robotics</a
+        <a
+          :class="$style.social"
+          href="mailto:soar@club.sutd.edu.sg"
+          target="_blank"
+          rel="noopener"
         >
-      </vue-headline>
-      <vue-headline level="3">
-        Instagram:
-        <a href="https://instagram.com/sutdsoar">@sutdsoar</a>
-      </vue-headline>
-      <vue-headline level="3">
-        GitHub:
-        <a href="https://github.com/sutd-robotics">@sutd-robotics</a>
-      </vue-headline>
-      <vue-headline level="3">
-        Facebook:
-        <a href="https://www.facebook.com/SUTDRobotics">@SUTDRobotics</a>
+          <vue-icon-email />
+        </a>
+        <a
+          :class="$style.social"
+          href="https://github.com/sutd-robotics"
+          target="_blank"
+          rel="noopener"
+        >
+          <vue-icon-github />
+        </a>
+        <a
+          :class="$style.social"
+          href="https://www.linkedin.com/company/sutd-organisation-of-autonomous-robotics"
+          target="_blank"
+          rel="noopener"
+        >
+          <vue-icon-linkedin />
+        </a>
+        <a
+          :class="$style.social"
+          href="https://instagram.com/sutdsoar"
+          target="_blank"
+          rel="noopener"
+        >
+          <vue-icon-instagram />
+        </a>
+        <a
+          :class="$style.social"
+          href="https://www.facebook.com/SUTDRobotics"
+          target="_blank"
+          rel="noopener"
+        >
+          <vue-icon-facebook />
+        </a>
       </vue-headline>
       <br />
     </home-section>
@@ -241,7 +269,11 @@ import TeamCard from '@/app/home/components/TeamCard/TeamCard.vue';
 import VueGrid from '@/app/shared/components/VueGrid/VueGrid.vue';
 import VueGridRow from '@/app/shared/components/VueGridRow/VueGridRow.vue';
 import VueGridItem from '@/app/shared/components/VueGridItem/VueGridItem.vue';
+import VueIconEmail from '@components/icons/VueIconEmail/VueIconEmail.vue';
 import VueIconGithub from '@components/icons/VueIconGithub/VueIconGithub.vue';
+import VueIconLinkedin from '@components/icons/VueIconLinkedin/VueIconLinkedin.vue';
+import VueIconInstagram from '@components/icons/VueIconInstagram/VueIconInstagram.vue';
+import VueIconFacebook from '@components/icons/VueIconFacebook/VueIconFacebook.vue';
 
 export default {
   metaInfo: {
@@ -308,7 +340,11 @@ export default {
     VueGrid,
     VueGridRow,
     VueGridItem,
+    VueIconEmail,
     VueIconGithub,
+    VueIconLinkedin,
+    VueIconInstagram,
+    VueIconFacebook,
   },
   computed: {
     ...mapState({
@@ -453,6 +489,22 @@ a {
   .cardsize {
     height: 60rem !important;
     width: 33rem !important;
+  }
+}
+
+.social {
+  font-size: $font-size-h1;
+  display: inline-block;
+  background: $brand-bg-color;
+  transition: $button-transition;
+  transition-property: box-shadow, background-color;
+  color: $brand-primary;
+  &:hover {
+    box-shadow: $button-active-shadow;
+  }
+  i {
+    height: $font-size-h1;
+    width: $font-size-h1;
   }
 }
 </style>

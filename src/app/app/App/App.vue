@@ -22,15 +22,25 @@
 
     <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag />Home </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#home">
+          <vue-icon-hashtag :class="$style.hashtag" />Home
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag />About </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#about">
+          <vue-icon-hashtag :class="$style.hashtag" />About
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#vision"> <vue-icon-hashtag />Vision </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#vision">
+          <vue-icon-hashtag :class="$style.hashtag" />Vision
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#projects"> <vue-icon-hashtag />Projects </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#projects">
+          <vue-icon-hashtag :class="$style.hashtag" />Projects
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag />Team </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#team">
+          <vue-icon-hashtag :class="$style.hashtag" />Team
+        </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
@@ -160,5 +170,11 @@ export default {
   .sidebar {
     display: block !important;
   }
+}
+
+.hashtag {
+  display: inline-block;
+  background: $brand-bg-color;
+  color: $brand-primary;
 }
 </style>

@@ -19,7 +19,7 @@
   "license": "MIT",
   "homepage": "",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/sutd-robotics/sutdsoar/issues"
   },
   "scripts": {
     "dev": "vuesion dev -o",
