@@ -62,13 +62,9 @@
           <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="SUTDoggo">
             <p>
               SOAR constantly seeks to strive for greater heights and
-              <a
-                href="https://github.com/sutd-robotics/SUTDoggo"
-              >SUTDoggo</a> is the product of the yearning for more.
+              <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
               Inspired by
-              <a
-                href="https://github.com/Nate711/StanfordDoggoProject"
-              >Stanford's open-source quadruped robot</a>, we
+              <a href="https://github.com/Nate711/StanfordDoggoProject">Stanford's open-source quadruped robot</a>, we
               ventured into the realm of legged robots. Despite a small team and a short timeline, the team has managed
               to recreate the iconic backflipping of Stanford's version. The team is currently developing autonomous
               capabilities, leveraging on SOAR's existing expertise in ROS and autonomous robots.
@@ -86,9 +82,9 @@
               <br />
               <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
               featured on
-              <a
-                href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
-              >The Straits Times</a>
+              <a href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
+                >The Straits Times</a
+              >
               and
               <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
             </p>
@@ -107,9 +103,7 @@
               Catch us at our next event to see what Jessica can do next!
               <br />
               <br />Check out Jessica being showcased at SUTD's Digital Open House microsite
-              <a
-                href="https://openhouse.sutd.edu.sg/"
-              >here</a>!
+              <a href="https://openhouse.sutd.edu.sg/">here</a>!
             </p>
           </project-card>
         </vue-grid-item>
@@ -118,9 +112,7 @@
             <p>
               SOAR actively participates in university level competitions where we are able to benchmark our robots with
               others in the field. The
-              <a
-                href="https://sauvc.org/"
-              >Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
+              <a href="https://sauvc.org/">Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
               international competition organised by IEEE Singapore, drawing in teams from across the globe. SOAR's 2019
               team emerged top 15 in the competition, despite many challenges facing the all-freshmore team. The team
               has grown leaps and bounds in the past year, and is gearing up for SAUVC 2020 this April. Despite the
@@ -141,60 +133,60 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="dody.jpg"
-            title="Dody Senputra"
+            image="placeholder.jpg"
+            title="Abram Tan"
             info="President"
-            link="https://github.com/ulaladungdung"
+            link="https://github.com/soar-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="james.jpg"
-            title="James Raphael Tiovalen"
+            image="ian.jpg"
+            title="Ian Goh"
             info="Vice-President"
-            link="https://github.com/jamestiotio"
+            link="https://github.com/iangohy"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="kevin.jpg"
-            title="Kevin Ma Yuchen"
+            image="placeholder.jpg"
+            title="Sun Zhengnan"
             info="Secretary"
-            link="https://github.com/Kevinskwk"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="wahkit.jpg"
-            title="Chung Wah Kit"
+            image="placeholder.jpg"
+            title="Nicodemus Yim"
             info="Treasurer"
-            link="https://github.com/sdencanted"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="wenkang.jpg"
-            title="Wong Wen Kang"
+            image="placeholder.jpg"
+            title="Wee Chun Hui"
             info="Programme Director"
-            link="https://github.com/1487quantum"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="haolan.jpg"
-            title="He Haolan"
-            info="Project Manager"
-            link="https://github.com/darthnoward"
+            image="placeholder.jpg"
+            title="Yap Boon Pin"
+            info="Projects Manager"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="yanle.jpg"
-            title="Lui Yan Le"
-            info="Marketing Director"
-            link="https://github.com/YanLeee0217"
+            image="placeholder.jpg"
+            title="Joel Tay"
+            info="Resource Director"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -212,20 +204,10 @@
       <vue-headline level="3">Join Us!</vue-headline>
       <br />
       <vue-headline level="3">
-        <a
-          :class="$style.social"
-          href="mailto:soar@club.sutd.edu.sg"
-          target="_blank"
-          rel="noopener"
-        >
+        <a :class="$style.social" href="mailto:soar@club.sutd.edu.sg" target="_blank" rel="noopener">
           <vue-icon-email />
         </a>
-        <a
-          :class="$style.social"
-          href="https://github.com/sutd-robotics"
-          target="_blank"
-          rel="noopener"
-        >
+        <a :class="$style.social" href="https://github.com/sutd-robotics" target="_blank" rel="noopener">
           <vue-icon-github />
         </a>
         <a
@@ -236,20 +218,10 @@
         >
           <vue-icon-linkedin />
         </a>
-        <a
-          :class="$style.social"
-          href="https://instagram.com/sutdsoar"
-          target="_blank"
-          rel="noopener"
-        >
+        <a :class="$style.social" href="https://instagram.com/sutdsoar" target="_blank" rel="noopener">
           <vue-icon-instagram />
         </a>
-        <a
-          :class="$style.social"
-          href="https://www.facebook.com/SUTDRobotics"
-          target="_blank"
-          rel="noopener"
-        >
+        <a :class="$style.social" href="https://www.facebook.com/SUTDRobotics" target="_blank" rel="noopener">
           <vue-icon-facebook />
         </a>
       </vue-headline>
