@@ -10,7 +10,7 @@ import VueHeadline from '@components/VueHeadline/VueHeadline.vue';
 
 export default {
   metaInfo: {
-    title: 'sutdsoar - Page not found!',
+    title: 'Oops! - Page not found!',
     meta: [
       {
         name: 'robots',

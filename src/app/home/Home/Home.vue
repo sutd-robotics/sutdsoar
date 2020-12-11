@@ -201,7 +201,7 @@
     </div>
 
     <home-section image="hangout.svg" flip>
-      <vue-headline level="3">Join Us!</vue-headline>
+      <vue-headline level="3" id="contact">Join Us!</vue-headline>
       <br />
       <vue-headline level="3">
         <a :class="$style.social" href="mailto:soar@club.sutd.edu.sg" target="_blank" rel="noopener">

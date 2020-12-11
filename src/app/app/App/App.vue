@@ -9,11 +9,13 @@
 
       <vue-button slot="right" color="primary" @click="buttonOnClickScroll('about')">ABOUT</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">VISION</vue-button>
+      <!-- <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">VISION</vue-button> -->
 
       <vue-button slot="right" color="primary" @click="buttonOnClickScroll('projects')">PROJECTS</vue-button>
 
       <vue-button slot="right" color="primary" @click="buttonOnClickScroll('team')">TEAM</vue-button>
+
+      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('contact')">CONTACT</vue-button>
     </vue-nav-bar>
 
     <router-view :class="$style.content" />
@@ -22,13 +24,9 @@
 
     <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="#home">
-          <vue-icon-hashtag :class="$style.hashtag" />Home
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag :class="$style.hashtag" />Home </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#about">
-          <vue-icon-hashtag :class="$style.hashtag" />About
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag :class="$style.hashtag" />About </vue-sidebar-group-item>
 
         <vue-sidebar-group-item to="#vision">
           <vue-icon-hashtag :class="$style.hashtag" />Vision
@@ -38,9 +36,7 @@
           <vue-icon-hashtag :class="$style.hashtag" />Projects
         </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#team">
-          <vue-icon-hashtag :class="$style.hashtag" />Team
-        </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag :class="$style.hashtag" />Team </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
