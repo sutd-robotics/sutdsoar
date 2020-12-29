@@ -3,7 +3,7 @@
     <a name="home"></a>
     <canvas :class="$style.canvas" ref="canvas"></canvas>
 
-    <img src="logo.svg" alt="sutdsoar" />
+    <img src="logo_2020_white.svg" alt="sutdsoar" />
   </div>
 </template>
 

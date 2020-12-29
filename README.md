@@ -1,7 +1,7 @@
 # SUTD Organisation of Autonomous Robotics (SOAR) Website
 
 <p align="center">
-<img width="420px" src="src/static/logo-colored.svg" alt="SUTD SOAR"/>
+<img width="420px" src="src/static/logo_2020.svg" alt="SUTD SOAR"/>
 </p>
 
 <p align="center"><a href="LICENSE" ><img src="https://img.shields.io/github/license/sutd-robotics/sutdsoar?style=for-the-badge"/></a> <a href="https://app.netlify.com/sites/sutdsoar/deploys"><img src="https://api.netlify.com/api/v1/badges/6cb418d5-1817-41c1-8336-7a984c495843/deploy-status"></a></p>

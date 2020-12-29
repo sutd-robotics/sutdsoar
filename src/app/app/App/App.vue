@@ -5,17 +5,19 @@
     <vue-navigation-progress :is-navigating="isNavigating" />
 
     <vue-nav-bar :class="$style.navbar">
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('home')">HOME</vue-button>
+      <vue-button slot="right" color="primary" @click="navigateTo('/')">HOME</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('about')">ABOUT</vue-button>
+      <vue-button slot="right" color="primary" @click="navigateTo('/#about')">ABOUT</vue-button>
 
       <!-- <vue-button slot="right" color="primary" @click="buttonOnClickScroll('vision')">VISION</vue-button> -->
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('projects')">PROJECTS</vue-button>
+      <vue-button slot="right" color="primary" @click="navigateTo('/#projects')">PROJECTS</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('team')">TEAM</vue-button>
+      <vue-button slot="right" color="primary" @click="navigateTo('/#team')">TEAM</vue-button>
 
-      <vue-button slot="right" color="primary" @click="buttonOnClickScroll('contact')">CONTACT</vue-button>
+      <vue-button slot="right" color="primary" @click="navigateTo('/#contact')">CONTACT</vue-button>
+
+      <vue-button slot="right" color="primary" @click="navigateTo('learn')">LEARN</vue-button>
     </vue-nav-bar>
 
     <router-view :class="$style.content" />
@@ -24,19 +26,23 @@
 
     <vue-sidebar :class="$style.sidebar" id="sidebar">
       <vue-sidebar-group title="Navigation">
-        <vue-sidebar-group-item to="#home"> <vue-icon-hashtag :class="$style.hashtag" />Home </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="/#home"> <vue-icon-hashtag :class="$style.hashtag" />Home </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#about"> <vue-icon-hashtag :class="$style.hashtag" />About </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="/#about">
+          <vue-icon-hashtag :class="$style.hashtag" />About
+        </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#vision">
+        <vue-sidebar-group-item to="/#vision">
           <vue-icon-hashtag :class="$style.hashtag" />Vision
         </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#projects">
+        <vue-sidebar-group-item to="/#projects">
           <vue-icon-hashtag :class="$style.hashtag" />Projects
         </vue-sidebar-group-item>
 
-        <vue-sidebar-group-item to="#team"> <vue-icon-hashtag :class="$style.hashtag" />Team </vue-sidebar-group-item>
+        <vue-sidebar-group-item to="/#team"> <vue-icon-hashtag :class="$style.hashtag" />Team </vue-sidebar-group-item>
+
+        <vue-sidebar-group-item to="/learn"> <vue-icon-hashtag :class="$style.hashtag" />Learn </vue-sidebar-group-item>
       </vue-sidebar-group>
     </vue-sidebar>
   </div>
@@ -120,6 +126,9 @@ export default {
     buttonOnClickScroll(loc: any) {
       var section = document.querySelector(`#${loc}`);
       section.scrollIntoView({ behavior: 'smooth' });
+    },
+    navigateTo(loc: any) {
+      this.$router.push(loc);
     },
   },
   created() {
