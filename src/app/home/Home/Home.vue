@@ -5,8 +5,8 @@
     <home-section id="about" image="firmware.svg" alternative>
       <a name="about"></a>
       <div :class="$style.about" ref="about">
-        <span :class="$style.bigspan">ABOUT US</span>
-        <span :class="$style.smallspan">about us</span>
+        <span :class="$style.bigspan">About Us</span>
+        <!-- <span :class="$style.smallspan">About Us</span> -->
       </div>
       <vue-headline level="3">Who We Are</vue-headline>
       <p :class="$style.aboutpara">
@@ -15,7 +15,7 @@
       </p>
       <br />
       <p :class="$style.aboutpara">
-        We aim to nurture a committed robotics community by building skills to take on industry projects. The club
+        We aim to nurture a committed robotics community through impactful projects and member development. The club
         adopts Robot Operating System (ROS) as the main robotics middleware framework to keep pace with indsutry demands
         as well as to ensure that our projects are cross-compatible and hardware-agnostic.
       </p>
@@ -43,18 +43,18 @@
 
     <div :class="$style.vision" ref="vision" id="vision">
       <a name="vision"></a>
-      <span :class="$style.bigspan">VISION</span>
-      <span :class="$style.smallspan">vision</span>
+      <span :class="$style.bigspan">Vision</span>
+      <!-- <span :class="$style.smallspan">vision</span> -->
       <p>
         To Nurture A Committed Robotics Community
-        <br />By Building Skills To Take On Industry Projects
+        <br />Through Impactful Projects and Member Development
       </p>
     </div>
 
     <div :class="$style.title" ref="projects" id="projects">
       <a name="projects"></a>
-      <span :class="$style.bigspan">PROJECTS</span>
-      <span :class="$style.smallspan">projects</span>
+      <span :class="$style.bigspan">Projects</span>
+      <!-- <span :class="$style.smallspan">projects</span> -->
     </div>
     <vue-grid>
       <vue-grid-row>
@@ -126,8 +126,8 @@
 
     <div :class="$style.title" ref="team" id="team">
       <a name="team"></a>
-      <span :class="$style.bigspan">THE TEAM</span>
-      <span :class="$style.smallspan">the team</span>
+      <span :class="$style.bigspan">The Team</span>
+      <!-- <span :class="$style.smallspan">the team</span> -->
     </div>
     <vue-grid>
       <vue-grid-row>
@@ -193,8 +193,8 @@
     </vue-grid>
 
     <div :class="$style.title" ref="family" id="family">
-      <span :class="$style.bigspan">THE FAMILY</span>
-      <span :class="$style.smallspan">the family</span>
+      <span :class="$style.bigspan">The Family</span>
+      <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
       <img src="soarfamily.jpg" />
