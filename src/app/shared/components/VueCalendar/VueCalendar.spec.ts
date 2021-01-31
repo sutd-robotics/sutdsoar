@@ -217,8 +217,8 @@ describe('VueCalendar.vue', () => {
     const years = wrapper.find(`.year`).findAll('div');
 
     expect(years).toHaveLength(102);
-    expect(years.at(1).text()).toBe('1970');
-    expect(years.at(years.length - 1).text()).toBe('2070');
+    expect(years.at(1).text()).toBe('1971');
+    expect(years.at(years.length - 1).text()).toBe('2071');
   });
 
   test('should render the right week days if firstDayOdWeek is 1 and the first day of the month is a sunday', () => {

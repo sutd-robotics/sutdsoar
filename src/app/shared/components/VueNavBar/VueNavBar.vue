@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="[$style.vueNavBar, showNavbar ? $style.solid : $style.gray]" ref="nav" id="nav">
+  <div v-bind:class="[$style.vueNavBar, showNavbar ? $style.solid : $style.black]" ref="nav" id="nav">
     <div>
       <slot name="left" />
     </div>
@@ -22,6 +22,7 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.onScroll);
+    this.showNavbar = false;
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll);
@@ -86,7 +87,7 @@ export default {
   transition: background 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 
-.gray {
+.black {
   color: #171717;
   background: #171717;
   transition: background 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
