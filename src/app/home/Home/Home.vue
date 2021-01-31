@@ -133,10 +133,10 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="placeholder.jpg"
+            image="abram.jpg"
             title="Abram Tan"
             info="President"
-            link="https://github.com/soar-robotics"
+            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
@@ -149,7 +149,7 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="placeholder.jpg"
+            image="zhengnan.jpg"
             title="Sun Zhengnan"
             info="Secretary"
             link="https://github.com/sutd-robotics"
@@ -159,15 +159,15 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="placeholder.jpg"
-            title="Nicodemus Yim"
+            image="joel.jpg"
+            title="Joel Tay"
             info="Treasurer"
             link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="placeholder.jpg"
+            image="chunhui.jpg"
             title="Wee Chun Hui"
             info="Programme Director"
             link="https://github.com/sutd-robotics"
@@ -175,17 +175,9 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="placeholder.jpg"
+            image="boonpin.jpg"
             title="Yap Boon Pin"
             info="Projects Manager"
-            link="https://github.com/sutd-robotics"
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="placeholder.jpg"
-            title="Joel Tay"
-            info="Resource Director"
             link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
