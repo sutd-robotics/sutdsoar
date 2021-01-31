@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.card" :style="{ 'background-image': 'url(' + image + ')' }" ref="card">
-    <a :class="$style.url" :href="link">
+    <a :class="$style.url" :href="link" target="_blank">
       <div :class="$style.cover" ref="cover">
         <h1 :class="$style.title">{{ title }}</h1>
         <div :class="$style.info">

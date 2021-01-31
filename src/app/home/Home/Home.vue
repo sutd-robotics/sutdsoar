@@ -158,12 +158,7 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="joel.jpg"
-            title="Joel Tay"
-            info="Treasurer"
-            link="https://github.com/sutd-robotics"
-          ></team-card>
+          <team-card image="joel.jpg" title="Joel Tay" info="Treasurer" link="https://github.com/Vemrthiss"></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
