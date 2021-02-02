@@ -5,9 +5,11 @@
         <vue-grid-item>
           <small
             >Copyright &copy; {{ year }} - SUTD Organisation of Autonomous Robotics. All rights reserved.<br />Designed
-            by <a href="https://github.com/ulaladungdung">Dody</a>, developed by
-            <a href="https://github.com/jamestiotio">James</a> and <a href="https://github.com/ulaladungdung">Dody</a>.
-            <br />Maintained by <a href="https://github.com/iangohy">Ian</a> and Joel.
+            by <a href="https://github.com/ulaladungdung" target="_blank">Dody</a>, developed by
+            <a href="https://github.com/jamestiotio" target="_blank">James</a> and
+            <a href="https://github.com/ulaladungdung" target="_blank">Dody</a>. <br />Maintained by
+            <a href="https://github.com/iangohy" target="_blank">Ian</a> and
+            <a href="https://github.com/Vemrthiss" target="_blank">Joel</a>.
           </small>
         </vue-grid-item>
       </vue-grid-row>

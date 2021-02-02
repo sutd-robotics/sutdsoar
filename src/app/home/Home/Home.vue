@@ -10,7 +10,7 @@
       </div>
       <vue-headline level="3">Who We Are</vue-headline>
       <p :class="$style.aboutpara">
-        SUTD Organisation of Autonomous Robotics (SOAR) focuses on autonomous robotics platforms, as well as AI and
+        SUTD Organization of Autonomous Robotics (SOAR) focuses on autonomous robotics platforms, as well as AI and
         machine learning frameworks.
       </p>
       <br />
