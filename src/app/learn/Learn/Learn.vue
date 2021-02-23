@@ -11,6 +11,14 @@
               <a href="https://github.com/sutd-robotics/">github.com/sutd-robotics</a>
             </p>
           </div>
+          <div :class="$style.learntext">
+            <p>
+              Guide to installing ROS Noetic on Ubuntu 20.04 (VirtualBox on Windows Machine)
+            </p>
+            <p :class="$style.learnlink">
+              <a href="https://github.com/sutd-robotics/virtualbox-ubuntu-ros">Link to guide</a>
+            </p>
+          </div>
         </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
