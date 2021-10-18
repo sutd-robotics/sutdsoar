@@ -149,8 +149,8 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="zhengnan.jpg"
-            title="Sun Zhengnan"
+            image="weiqing.jpg"
+            title="Teo Wei Qing"
             info="Secretary"
             link="https://github.com/sutd-robotics"
           ></team-card>
