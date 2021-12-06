@@ -16,7 +16,7 @@
       <br />
       <p :class="$style.aboutpara">
         We aim to nurture a committed robotics community through impactful projects and member development. The club
-        adopts Robot Operating System (ROS) as the main robotics middleware framework to keep pace with indsutry demands
+        adopts Robot Operating System (ROS) as the main robotics middleware framework to keep pace with industry demands
         as well as to ensure that our projects are cross-compatible and hardware-agnostic.
       </p>
       <br />
