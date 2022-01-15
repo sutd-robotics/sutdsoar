@@ -62,7 +62,7 @@
     "helmet": "3.21.1",
     "lodash": "4.17.21",
     "lru-cache": "5.1.1",
-    "marked": "0.7.0",
+    "marked": "4.0.10",
     "serve-favicon": "2.5.0",
     "vee-validate": "2.0.9",
     "vue": "2.6.12",
