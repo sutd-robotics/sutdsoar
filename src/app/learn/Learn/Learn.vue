@@ -5,18 +5,26 @@
         <vue-grid-item>
           <div :class="$style.learntext">
             <p>
-              Visit our github repo to access our learning resources!
-            </p>
-            <p :class="$style.learnlink">
-              <a href="https://github.com/sutd-robotics/">github.com/sutd-robotics</a>
-            </p>
-          </div>
-          <div :class="$style.learntext">
-            <p>
               Guide to installing ROS Noetic on Ubuntu 20.04 (VirtualBox on Windows Machine)
             </p>
             <p :class="$style.learnlink">
               <a href="https://github.com/sutd-robotics/virtualbox-ubuntu-ros">Link to guide</a>
+            </p>
+          </div>
+          <div :class="$style.learntext">
+            <p>
+              ROS Workshop 2022
+            </p>
+            <p :class="$style.learnlink">
+              <a href="https://github.com/sutd-robotics/ros-ws-2022">Link to materials</a>
+            </p>
+          </div>
+          <div :class="$style.learntext">
+            <p>
+              Visit our GitHub repo to access more learning resources!
+            </p>
+            <p :class="$style.learnlink">
+              <a href="https://github.com/sutd-robotics/">github.com/sutd-robotics</a>
             </p>
           </div>
         </vue-grid-item>
