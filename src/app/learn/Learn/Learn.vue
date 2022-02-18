@@ -97,6 +97,7 @@ export default {
   margin-top: $nav-bar-height;
   min-height: 500px;
   font-size: 1.5em;
+  padding-bottom: 3em;
 }
 .learntext {
   padding-top: 5em;
