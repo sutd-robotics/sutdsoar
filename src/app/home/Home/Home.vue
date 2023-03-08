@@ -133,16 +133,16 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="abram.jpg"
-            title="Abram Tan"
+            image="suriya.jpg"
+            title="Suriya"
             info="President"
             link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="ian.jpg"
-            title="Ian Goh"
+            image="KangZhao.jpg"
+            title="Kang Zhao"
             info="Vice-President"
             link="https://github.com/iangohy"
           ></team-card>
@@ -150,7 +150,7 @@
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="weiqing.jpg"
-            title="Teo Wei Qing"
+            title="Michael"
             info="Secretary"
             link="https://github.com/sutd-robotics"
           ></team-card>
@@ -163,7 +163,7 @@
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="chunhui.jpg"
-            title="Wee Chun Hui"
+            title="Eugenie Alana"
             info="Programme Director"
             link="https://github.com/sutd-robotics"
           ></team-card>
@@ -173,6 +173,57 @@
             image="boonpin.jpg"
             title="Yap Boon Pin"
             info="Projects Manager"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="abram.jpg"
+            title="Suriya"
+            info="President"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="ian.jpg"
+            title="Kang Zhao"
+            info="Vice-President"
+            link="https://github.com/iangohy"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="weiqing.jpg"
+            title="Michael"
+            info="Secretary"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row> <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="abram.jpg"
+            title="Suriya"
+            info="President"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="ian.jpg"
+            title="Kang Zhao"
+            info="Vice-President"
+            link="https://github.com/iangohy"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="weiqing.jpg"
+            title="Michael"
+            info="Secretary"
             link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
