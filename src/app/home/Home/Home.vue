@@ -21,7 +21,7 @@
       </p>
       <br />
       <p :class="$style.aboutpara">
-        SOAR has grown rapidly in the 4 short years, gaining industry recognition in the form of a sponsorship from
+        SOAR has grown rapidly in the 5 short years, gaining industry recognition in the form of a sponsorship from
         Lionsbot in 2018. We aim to groom and nurture young robotics engineers who are well-rounded and can tackle a
         variety of real-world robotics challenges. On top of this, SOAR is active in keeping pace with the industry's
         appetite through our involvement in events such as Makerfaire Singapore and Singapore Robo Expo. Our members
@@ -59,7 +59,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="SUTDoggo">
+          <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="BioRobot">
             <p>
               SOAR constantly seeks to strive for greater heights and
               <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
@@ -93,7 +93,7 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="jessica.jpg" title="Jessica">
+          <project-card :class="$style.cardsize" image="jessica.jpg" title="Adele">
             <p>
               Jessica is our in-house robot arm that we engineered to serve coffee! Using ROS and 3D printing
               technologies, we created a robot arm that serves coffee at the push of a button. What started as a budding
@@ -108,7 +108,7 @@
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="sauvc.jpg" title="SAUVC">
+          <project-card :class="$style.cardsize" image="sauvc.jpg" title="Under Water Unit [UWU]">
             <p>
               SOAR actively participates in university level competitions where we are able to benchmark our robots with
               others in the field. The
@@ -134,46 +134,44 @@
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="abram.jpg"
-            title="Abram Tan"
+            title="Suriya "
             info="President"
-            link="https://github.com/sutd-robotics"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="ian.jpg"
-            title="Ian Goh"
-            info="Vice-President"
-            link="https://github.com/iangohy"
+            title="Kang Zhao"
+            info="Vice-President[Tech]"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="weiqing.jpg"
-            title="Teo Wei Qing"
-            info="Secretary"
-            link="https://github.com/sutd-robotics"
+            title="Ernest Tan"
+            info="Vice-President[Admin]"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="joel.jpg" title="Joel Tay" info="Treasurer" link="https://github.com/Vemrthiss"></team-card>
+          <team-card image="joel.jpg" 
+          title="Issac Lim" 
+          info="Treasurer" 
+          ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="chunhui.jpg"
-            title="Wee Chun Hui"
-            info="Programme Director"
-            link="https://github.com/sutd-robotics"
+            title="Michael Hoon"
+            info="Secretary"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="boonpin.jpg"
-            title="Yap Boon Pin"
-            info="Projects Manager"
-            link="https://github.com/sutd-robotics"
+            title="Eugenie"
+            info="Programs Director"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -181,46 +179,44 @@
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="abram.jpg"
-            title="Abram Tan"
-            info="President"
-            link="https://github.com/sutd-robotics"
+            title="Le Duy"
+            info="Project Manager"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="ian.jpg"
-            title="Ian Goh"
-            info="Vice-President"
-            link="https://github.com/iangohy"
+            title="Elroy Tan"
+            info="Training Head"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="weiqing.jpg"
-            title="Teo Wei Qing"
-            info="Secretary"
-            link="https://github.com/sutd-robotics"
+            title="Jon Koo"
+            info="RoboClash IC"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="joel.jpg" title="Joel Tay" info="Treasurer" link="https://github.com/Vemrthiss"></team-card>
+          <team-card image="joel.jpg" 
+          title="Allison Yee" 
+          info="Multi-Media" 
+          ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="chunhui.jpg"
-            title="Wee Chun Hui"
-            info="Programme Director"
-            link="https://github.com/sutd-robotics"
+            title="Laverne"
+            info="Publicity Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
             image="boonpin.jpg"
-            title="Yap Boon Pin"
-            info="Projects Manager"
-            link="https://github.com/sutd-robotics"
+            title="Zayne"
+            info="Logistics Director"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
