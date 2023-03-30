@@ -177,6 +177,53 @@
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="abram.jpg"
+            title="Abram Tan"
+            info="President"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="ian.jpg"
+            title="Ian Goh"
+            info="Vice-President"
+            link="https://github.com/iangohy"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="weiqing.jpg"
+            title="Teo Wei Qing"
+            info="Secretary"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card image="joel.jpg" title="Joel Tay" info="Treasurer" link="https://github.com/Vemrthiss"></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="chunhui.jpg"
+            title="Wee Chun Hui"
+            info="Programme Director"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <team-card
+            image="boonpin.jpg"
+            title="Yap Boon Pin"
+            info="Projects Manager"
+            link="https://github.com/sutd-robotics"
+          ></team-card>
+        </vue-grid-item>
+      </vue-grid-row>
     </vue-grid>
 
     <div :class="$style.title" ref="family" id="family">
