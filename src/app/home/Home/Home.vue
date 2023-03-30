@@ -60,14 +60,13 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="BioRobot.jpg" title="BioRobot">
-            
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="MOMObot.JPG" title="MOMObot">
             <p>
               <a href="https://github.com/methylDragon/momobot">MOMObot</a> was our first foray into autonomous service
-              robots 4 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
+              robots 5 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
               that is capable of autonomous localisation, even in crowded environments! Developed to carry payloads of
               up to 50kg, it is a stable autonomous platform for us to develop novel applications for autonomous ground
               robots.
