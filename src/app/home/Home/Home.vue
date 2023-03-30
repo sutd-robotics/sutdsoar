@@ -59,23 +59,15 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="sutdoggo.jpg" title="BioRobot">
-            <p>
-              SOAR constantly seeks to strive for greater heights and
-              <a href="https://github.com/sutd-robotics/SUTDoggo">SUTDoggo</a> is the product of the yearning for more.
-              Inspired by
-              <a href="https://github.com/Nate711/StanfordDoggoProject">Stanford's open-source quadruped robot</a>, we
-              ventured into the realm of legged robots. Despite a small team and a short timeline, the team has managed
-              to recreate the iconic backflipping of Stanford's version. The team is currently developing autonomous
-              capabilities, leveraging on SOAR's existing expertise in ROS and autonomous robots.
-            </p>
+          <project-card :class="$style.cardsize" image="BioRobot.jpg" title="BioRobot">
+            
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="momobot.png" title="MOMObot">
+          <project-card :class="$style.cardsize" image="MOMObot.JPG" title="MOMObot">
             <p>
               <a href="https://github.com/methylDragon/momobot">MOMObot</a> was our first foray into autonomous service
-              robots 2 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
+              robots 4 years ago and it has become an icon of SOAR. MOMObot is a modular and mobile service ground robot
               that is capable of autonomous localisation, even in crowded environments! Developed to carry payloads of
               up to 50kg, it is a stable autonomous platform for us to develop novel applications for autonomous ground
               robots.
@@ -93,32 +85,13 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="jessica.jpg" title="Adele">
-            <p>
-              Jessica is our in-house robot arm that we engineered to serve coffee! Using ROS and 3D printing
-              technologies, we created a robot arm that serves coffee at the push of a button. What started as a budding
-              passion project to learn how to build and develop robotic arm platforms has become a cherished member of
-              SOAR. Jessica has been showcased by the school for multiple events, including at the MINDEF Innovation
-              Symposium 2019 and SUTD Open House. Work still continues as we work to improve Jessica's capabilities.
-              Catch us at our next event to see what Jessica can do next!
-              <br />
-              <br />Check out Jessica being showcased at SUTD's Digital Open House microsite
-              <a href="https://openhouse.sutd.edu.sg/">here</a>!
-            </p>
+          <project-card :class="$style.cardsize" image="Adele.jpg" title="Adele">
+           
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="sauvc.jpg" title="Under Water Unit [UWU]">
-            <p>
-              SOAR actively participates in university level competitions where we are able to benchmark our robots with
-              others in the field. The
-              <a href="https://sauvc.org/">Singapore Autonomous Underwater Vehicle Competition (SAUVC)</a> is an
-              international competition organised by IEEE Singapore, drawing in teams from across the globe. SOAR's 2019
-              team emerged top 15 in the competition, despite many challenges facing the all-freshmore team. The team
-              has grown leaps and bounds in the past year, and is gearing up for SAUVC 2020 this April. Despite the
-              challenging field of underwater robotics, our team has been successful in competing with peers in the
-              region - exploring fields such as computer vision, electronics design and acoustics.
-            </p>
+          <project-card :class="$style.cardsize" image="UWU.JPG" title="Under Water Unit [UWU]">
+           
           </project-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -133,21 +106,21 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="abram.jpg"
+            image="Suriya.jpg"
             title="Suriya "
             info="President"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="ian.jpg"
+            image="KangZhao.jpg"
             title="Kang Zhao"
             info="Vice-President[Tech]"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="weiqing.jpg"
+            image="Ernest.jpg"
             title="Ernest Tan"
             info="Vice-President[Admin]"
           ></team-card>
@@ -155,21 +128,21 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="joel.jpg" 
+          <team-card image="Issac.jpeg" 
           title="Issac Lim" 
           info="Treasurer" 
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="chunhui.jpg"
+            image="Michael.JPG"
             title="Michael Hoon"
             info="Secretary"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="boonpin.jpg"
+            image="Eugenie.jpg"
             title="Eugenie"
             info="Programs Director"
           ></team-card>
@@ -178,21 +151,21 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="abram.jpg"
+            image="Zuey.jpg"
             title="Le Duy"
             info="Project Manager"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="ian.jpg"
+            image="Elroy.jpg"
             title="Elroy Tan"
             info="Training Head"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="weiqing.jpg"
+            image="jon.jpg"
             title="Jon Koo"
             info="RoboClash IC"
           ></team-card>
@@ -200,21 +173,21 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="joel.jpg" 
+          <team-card image="Allison.jpg" 
           title="Allison Yee" 
           info="Multi-Media" 
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="chunhui.jpg"
+            image="Laverne.JPG"
             title="Laverne"
             info="Publicity Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="boonpin.jpg"
+            image="Zayne.jpg"
             title="Zayne"
             info="Logistics Director"
           ></team-card>
@@ -227,7 +200,7 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
-      <img src="soarfamily.jpg" />
+      <img src="soar family.JPG" />
     </div>
 
     <home-section image="hangout.svg" flip>
