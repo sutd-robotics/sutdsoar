@@ -199,7 +199,7 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
-      <img src="soar family.JPG" />
+      <img src="soarfamily2023.JPG" />
     </div>
 
     <home-section image="hangout.svg" flip>
