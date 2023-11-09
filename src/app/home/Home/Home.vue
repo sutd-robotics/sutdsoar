@@ -269,7 +269,10 @@
     </home-section>
   </div>
 </template>
-
+<div>
+  <p>Sponsorship</p>
+  <img src="lionbot.png" alt="Sponsorship Logo" width="100" height="50">
+</div>
 
 
 
