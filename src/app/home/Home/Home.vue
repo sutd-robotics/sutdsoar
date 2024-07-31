@@ -165,7 +165,7 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Aryan.jpeg" 
+          <team-card image="Aryan.jpg" 
           title="Aryan Gupta" 
           info="Treasurer" 
           ></team-card>
