@@ -51,6 +51,44 @@
       </p>
     </div>
 
+    <div :class="$style.title" ref="events" id="events">
+      <a name="events"></a>
+      <span :class="$style.bigspan">Events</span>
+      <!-- <span :class="$style.smallspan">vision</span> -->
+    </div>
+    <vue-grid>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="soarchallenge.jpg" title="Soar Challenge">
+            <p>
+              SOAR Challenge aims to introduce robotics in a fun and engaging way.
+              Participants will hone their basic robotics skills in a series of workshops, build a robot, and face-off in a challenge. 
+            </p>
+          </project-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="roboclash23.png" title="Roboclash 2024">
+            <p>
+              <a href="https://robocla.sh/">ROBOCLASH 2024</a> is making a comeback! 
+              Get ready for another round of intense robot battles and exiting challenges! 
+              Whether you're a novice or a pro, this head-to-head competition is your chance to showcase your skills. 
+              Take on the challenge, build a robot, and watch it battle it out in the ultimate ROBOCLASH!
+              <br />
+              <br /> Registration starts on 27 Oct 2023 till 15 Nov 2023! What are you waiting for? Go click on the link now!
+            </p>
+          </project-card>
+        </vue-grid-item>
+      </vue-grid-row>
+    </vue-grid>
+
+
+
+
+
+
+
+
+
     <div :class="$style.title" ref="projects" id="projects">
       <a name="projects"></a>
       <span :class="$style.bigspan">Projects</span>
@@ -59,7 +97,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="BioRobot.jpg" title="BioRobot">
+          <project-card :class="$style.cardsize" image="BioRobot.png" title="BioRobot">
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
@@ -84,7 +122,7 @@
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="Adele.jpg" title="Adele">
+          <project-card :class="$style.cardsize" image="Adele.png" title="Adele">
            
           </project-card>
         </vue-grid-item>
@@ -105,44 +143,44 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Suriya.jpg"
-            title="Suriya "
+            image="Junjie.jpg"
+            title="Kwan Jun Jie"
             info="President"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="KangZhao.jpg"
-            title="Kang Zhao"
+            image="Vincent.jpg"
+            title="Vincent Ho"
             info="Vice-President[Tech]"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Ernest.jpg"
-            title="Ernest Tan"
+            image="Amanda.jpg"
+            title="Amanda Lai"
             info="Vice-President[Admin]"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Issac.jpeg" 
-          title="Issac Lim" 
+          <team-card image="Aryan.jpg" 
+          title="Aryan Gupta" 
           info="Treasurer" 
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Michael.JPG"
-            title="Michael Hoon"
+            image="Tricia.JPG"
+            title="Tricia Ng"
             info="Secretary"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Eugenie.jpg"
-            title="Eugenie"
+            image="Calvin.jpg"
+            title="Richard Calvin"
             info="Programs Director"
           ></team-card>
         </vue-grid-item>
@@ -150,45 +188,31 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Zuey.jpg"
-            title="Le Duy"
+            image="Joshua.jpg"
+            title="Joshua Loon"
             info="Project Manager"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Elroy.jpg"
-            title="Elroy Tan"
-            info="Training Head"
+            image="Caven.jpg"
+            title="Caven Chia"
+            info="Project Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="jon.jpg"
-            title="Jon Koo"
-            info="RoboClash IC"
+            image="Atikah.jpg"
+            title="Atikah"
+            info="Publicity Director"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Allison.jpg" 
-          title="Allison Yee" 
-          info="Multi-Media" 
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Laverne.JPG"
-            title="Laverne"
-            info="Publicity Director"
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Zayne.jpg"
-            title="Zayne"
-            info="Logistics Director"
+          <team-card image="Daniel.jpg" 
+          title="Daniel" 
+          info="Logistics Director" 
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -231,6 +255,14 @@
     </home-section>
   </div>
 </template>
+<div>
+  <p>Sponsorship</p>
+  <img src="lionbot.png" alt="Sponsorship Logo" width="100" height="50">
+</div>
+
+
+
+
 
 <script lang="ts">
 import { mapState } from 'vuex';
