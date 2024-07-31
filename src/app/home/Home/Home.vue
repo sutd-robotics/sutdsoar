@@ -143,44 +143,44 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Suriya.jpg"
-            title="Suriya "
+            image="Junjie.jpg"
+            title="Kwan Jun Jie"
             info="President"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="KangZhao.jpg"
-            title="Kang Zhao"
+            image="Vincent.jpg"
+            title="Vincent Ho"
             info="Vice-President[Tech]"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Ernest.jpg"
-            title="Ernest Tan"
+            image="Amanda.jpg"
+            title="Amanda Lai"
             info="Vice-President[Admin]"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Issac.jpeg" 
-          title="Issac Lim" 
+          <team-card image="Aryan.jpeg" 
+          title="Aryan Gupta" 
           info="Treasurer" 
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Michael.JPG"
-            title="Michael Hoon"
+            image="Tricia.JPG"
+            title="Tricia Ng"
             info="Secretary"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Eugenie.jpg"
-            title="Eugenie"
+            image="Calvin.jpg"
+            title="Richard Calvin"
             info="Programs Director"
           ></team-card>
         </vue-grid-item>
@@ -188,45 +188,31 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Zuey.jpg"
-            title="Le Duy"
+            image="Joshua.jpg"
+            title="Joshua Loon"
             info="Project Manager"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Elroy.jpg"
-            title="Elroy Tan"
-            info="Training Head"
+            image="Caven.jpg"
+            title="Caven Chia"
+            info="Project Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="jon.jpg"
-            title="Jon Koo"
-            info="RoboClash IC"
+            image="Atikah.jpg"
+            title="Atikah"
+            info="Publicity Director"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Allison.jpg" 
-          title="Allison Yee" 
-          info="Multi-Media" 
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Laverne.JPG"
-            title="Laverne"
-            info="Publicity Director"
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Zayne.jpg"
-            title="Zayne"
-            info="Logistics Director"
+          <team-card image="Daniel.jpg" 
+          title="Daniel" 
+          info="Logistics Director" 
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
