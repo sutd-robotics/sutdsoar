@@ -97,7 +97,14 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="BioRobot.png" title="BioRobot">
+          <project-card :class="$style.cardsize" image="scrt.JPG" title="SCRT(VEX)">
+            <p>
+              SOAR’s competitive robotics team participating in the <a href="https://www.vexrobotics.com/v5/competition/vrc-current-game">VEX Robotics</a> Competition series. 
+              2024 Asia-Pacific Regional Champions 
+              Focusing on integrating hardware and software to create robots that compete against robots from other universities.
+              <br />
+              <br />Project Lead: Jun Jie, @tr1ngg
+            </p>
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
@@ -109,26 +116,33 @@
               up to 50kg, it is a stable autonomous platform for us to develop novel applications for autonomous ground
               robots.
               <br />
-              <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
-              featured on
-              <a href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
-                >The Straits Times</a
-              >
-              and
-              <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
+              <br />Project Lead: Vincent,  @Vincent_ho_darkmidget
             </p>
           </project-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="Adele.png" title="Adele">
-           
+          <project-card :class="$style.cardsize" image="beach.jpg" title="Sand-E">
+           <p>
+            To maintain beach cleanliness by removing surface level pollutants near the shoreline
+            <br />Catch us in action on 22 January 2025 @Pasir Ris Beach
+            <br />
+            <br />Project Lead: Vincent,  @Vincent_ho_darkmidget
+           </p>
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="UWU.JPG" title="Under Water Unit [UWU]">
-           
+           <p>
+            UnderWater Unit (UWU) participates in Singapore Autonomous Underwater Vehicle Challenge (SAUVC) annually. 
+            In 2024, the team excelled at the qualifiers and advanced to the SAUVC Finals Round. 
+            The team works together to incrementally build an AUV together. 
+            This involves watertight hardware, electrical engineering, and Robot Operating System (ROS). 
+            <br />The team is currently working towards a marine simulator & distillation-based vision algorithm for underwater object localization
+            <br />
+            <br />Project Lead: John-Henry, @Interpause
+           </p>
           </project-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -223,7 +237,7 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
-      <img src="soarfamily2023.JPG" />
+      <img src="exco_photo.JPG" />
     </div>
 
     <home-section image="hangout.svg" flip>
