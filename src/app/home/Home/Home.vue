@@ -1,3 +1,4 @@
+<!-- Home.vue -->
 <template>
   <div>
     <stage :disable-particles="disableParticles" />
@@ -78,17 +79,20 @@
             </p>
           </project-card>
         </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="roboclash25.jpg" title="Roboclash 2025">
+            <p>
+              <a href="https://robocla.sh/">ROBOCLASH 2025</a> 
+              Gear up for thrilling robot battles and exciting challenges. 
+              Whether you're a beginner or an expert, this is your chance to put your skills to the test.
+              Build your robot, step into the arena, and compete for glory in the ultimate showdown!
+              <br />
+              <br /> Registration opens on 20 Feb 2025—don't miss out! Click the link and join the action now!
+            </p>
+          </project-card>
+        </vue-grid-item>
       </vue-grid-row>
     </vue-grid>
-
-
-
-
-
-
-
-
-
     <div :class="$style.title" ref="projects" id="projects">
       <a name="projects"></a>
       <span :class="$style.bigspan">Projects</span>
