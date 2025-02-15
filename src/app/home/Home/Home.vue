@@ -68,7 +68,7 @@
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="roboclash23.png" title="Roboclash 2024">
+          <project-card :class="$style.cardsize" image="roboclash23.JPG" title="Roboclash 2024">
             <p>
               <a href="https://robocla.sh/">ROBOCLASH 2024</a> is making a comeback! 
               Get ready for another round of intense robot battles and exiting challenges! 
