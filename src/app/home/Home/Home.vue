@@ -230,7 +230,7 @@
         <vue-grid-item :class="$style.centeritem">
           <team-card image="Joel.jpg" 
           title="Joel" 
-          info="Training" 
+          info="Training Director" 
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
