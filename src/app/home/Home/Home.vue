@@ -190,7 +190,7 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Bryan Wilson.JPG"
+            image="Bryan_Wilson.jpg"
             title="Bryan Wilson"
             info="Secretary"
           ></team-card>
@@ -213,7 +213,7 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Wen Xuan.png"
+            image="Wen_Xuan.png"
             title="Wen Xuan"
             info="Logistics"
           ></team-card>
