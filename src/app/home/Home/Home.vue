@@ -129,7 +129,14 @@
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="beach.jpg" title="Sand-E">
            <p>
-            To maintain beach cleanliness by removing surface level pollutants near the shoreline
+            <a ref="https://www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand">Sand-E</a>, the beach cleaning robot, maintains beach cleanliness by removing surface level pollutants near the shoreline.
+            <br>
+            Source:
+            Lim, Zachary. 
+            “Meet Sand-E the Robot, Developed by SUTD Students to ‘Walk’ on Sand and Pick up Trash.” 
+            The Straits Times, 23 Jan. 2025, 
+            www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand.
+            </br>
             <br />Catch us in action on 22 January 2025 @Pasir Ris Beach
             <br />
             <br />Project Lead: Vincent,  @Vincent_ho_darkmidget
@@ -215,7 +222,7 @@
           <team-card
             image="Wen_Xuan.png"
             title="Wen Xuan"
-            info="Logistics"
+            info="Logistics Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
@@ -241,6 +248,7 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
+      <p>25/26 EXCO photo coming soon! In the meantime, please appreciate the beautiful ppl of 24/25 EXCO!</p>
       <img src="exco_photo.JPG" />
     </div>
 
