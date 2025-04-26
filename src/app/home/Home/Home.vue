@@ -129,7 +129,9 @@
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="beach.jpg" title="Sand-E">
            <p>
-            <a ref="https://www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand">Sand-E</a>, the beach cleaning robot, maintains beach cleanliness by removing surface level pollutants near the shoreline.
+            <a href="https://www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand">Sand-E</a>, the beach cleaning robot, maintains beach cleanliness by removing surface level pollutants near the shoreline.
+            
+            <br>
             <br>
             Source:
             Lim, Zachary. 
@@ -248,7 +250,7 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
-      <p>25/26 EXCO photo coming soon! In the meantime, please appreciate the beautiful ppl of 24/25 EXCO!</p>
+      <p style="text-align: center">25/26 EXCO photo coming soon! In the meantime, please appreciate the beautiful ppl of 24/25 EXCO!</p>
       <img src="exco_photo.JPG" />
     </div>
 
