@@ -197,7 +197,7 @@
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Default.jpg"
+            image="Nicholas.jpg"
             title="Nicholas"
             info="Programs Director"
           ></team-card>
