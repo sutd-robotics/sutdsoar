@@ -1,3 +1,4 @@
+<!-- Home.vue -->
 <template>
   <div>
     <stage :disable-particles="disableParticles" />
@@ -51,6 +52,47 @@
       </p>
     </div>
 
+    <div :class="$style.title" ref="events" id="events">
+      <a name="events"></a>
+      <span :class="$style.bigspan">Events</span>
+      <!-- <span :class="$style.smallspan">vision</span> -->
+    </div>
+    <vue-grid>
+      <vue-grid-row>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="soarchallenge.jpg" title="Soar Challenge">
+            <p>
+              SOAR Challenge aims to introduce robotics in a fun and engaging way.
+              Participants will hone their basic robotics skills in a series of workshops, build a robot, and face-off in a challenge. 
+            </p>
+          </project-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="roboclash24.JPG" title="Roboclash 2024">
+            <p>
+              <a href="https://robocla.sh/">ROBOCLASH 2024</a> is making a comeback! 
+              Get ready for another round of intense robot battles and exiting challenges! 
+              Whether you're a novice or a pro, this head-to-head competition is your chance to showcase your skills. 
+              Take on the challenge, build a robot, and watch it battle it out in the ultimate ROBOCLASH!
+              <br />
+              <br /> Registration starts on 27 Oct 2023 till 15 Nov 2023! What are you waiting for? Go click on the link now!
+            </p>
+          </project-card>
+        </vue-grid-item>
+        <vue-grid-item :class="$style.centeritem">
+          <project-card :class="$style.cardsize" image="roboclash25.jpg" title="Roboclash 2025">
+            <p>
+              <a href="https://roboclash.vercel.app/">ROBOCLASH 2025</a> 
+              Gear up for thrilling robot battles and exciting challenges. 
+              Whether you're a beginner or an expert, this is your chance to put your skills to the test.
+              Build your robot, step into the arena, and compete for glory in the ultimate showdown!
+              <br />
+              <br /> Registration opens on 20 Feb 2025—don't miss out! Click the link and join the action now!
+            </p>
+          </project-card>
+        </vue-grid-item>
+      </vue-grid-row>
+    </vue-grid>
     <div :class="$style.title" ref="projects" id="projects">
       <a name="projects"></a>
       <span :class="$style.bigspan">Projects</span>
@@ -59,7 +101,14 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="BioRobot.jpg" title="BioRobot">
+          <project-card :class="$style.cardsize" image="scrt.JPG" title="SCRT(VEX)">
+            <p>
+              SOAR’s competitive robotics team participating in the <a href="https://www.vexrobotics.com/v5/competition/vrc-current-game">VEX Robotics</a> Competition series. 
+              2024 Asia-Pacific Regional Champions 
+              Focusing on integrating hardware and software to create robots that compete against robots from other universities.
+              <br />
+              <br />Project Lead: Jun Jie, @tr1ngg
+            </p>
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
@@ -71,26 +120,42 @@
               up to 50kg, it is a stable autonomous platform for us to develop novel applications for autonomous ground
               robots.
               <br />
-              <br />Look out for MOMObot at SUTD's 10th Anniversary TechLaunch celebration in 2019, where it was
-              featured on
-              <a href="https://www.straitstimes.com/singapore/sutd-to-develop-new-design-and-ai-degree"
-                >The Straits Times</a
-              >
-              and
-              <a href="https://youtu.be/4dUrA5PkQEw">Channel News Asia</a>!
+              <br />Project Lead: Vincent,  @Vincent_ho_darkmidget
             </p>
           </project-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="Adele.jpg" title="Adele">
-           
+          <project-card :class="$style.cardsize" image="beach.jpg" title="Sand-E">
+           <p>
+            <a href="https://www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand">Sand-E</a>, the beach cleaning robot, maintains beach cleanliness by removing surface level pollutants near the shoreline.
+            
+            <br>
+            <br>
+            Source:
+            Lim, Zachary. 
+            “Meet Sand-E the Robot, Developed by SUTD Students to ‘Walk’ on Sand and Pick up Trash.” 
+            The Straits Times, 23 Jan. 2025, 
+            www.straitstimes.com/singapore/environment/meet-sand-e-the-trash-picking-robot-developed-by-sutd-students-that-can-walk-on-sand.
+            </br>
+            <br />Catch us in action on 22 January 2025 @Pasir Ris Beach
+            <br />
+            <br />Project Lead: Vincent,  @Vincent_ho_darkmidget
+           </p>
           </project-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <project-card :class="$style.cardsize" image="UWU.JPG" title="Under Water Unit [UWU]">
-           
+           <p>
+            UnderWater Unit (UWU) participates in Singapore Autonomous Underwater Vehicle Challenge (SAUVC) annually. 
+            In 2024, the team excelled at the qualifiers and advanced to the SAUVC Finals Round. 
+            The team works together to incrementally build an AUV together. 
+            This involves watertight hardware, electrical engineering, and Robot Operating System (ROS). 
+            <br />The team is currently working towards a marine simulator & distillation-based vision algorithm for underwater object localization
+            <br />
+            <br />Project Lead: John-Henry, @Interpause
+           </p>
           </project-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -105,44 +170,44 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Suriya.jpg"
-            title="Suriya "
+            image="Sri.jpg"
+            title="Sri"
             info="President"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="KangZhao.jpg"
-            title="Kang Zhao"
+            image="Bryan.jpg"
+            title="Bryan Lim"
             info="Vice-President[Tech]"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Ernest.jpg"
-            title="Ernest Tan"
+            image="Raeanne.jpg"
+            title="Raeanne Wee"
             info="Vice-President[Admin]"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Issac.jpeg" 
-          title="Issac Lim" 
+          <team-card image="Vera.jpg" 
+          title="Vera" 
           info="Treasurer" 
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Michael.JPG"
-            title="Michael Hoon"
+            image="Bryan_Wilson.jpg"
+            title="Bryan Wilson"
             info="Secretary"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Eugenie.jpg"
-            title="Eugenie"
+            image="Nicholas.jpg"
+            title="Nicholas"
             info="Programs Director"
           ></team-card>
         </vue-grid-item>
@@ -150,45 +215,31 @@
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Zuey.jpg"
-            title="Le Duy"
-            info="Project Manager"
+            image="Bimon.jpg"
+            title="Bimon"
+            info="Project Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="Elroy.jpg"
-            title="Elroy Tan"
-            info="Training Head"
+            image="Wen_Xuan.png"
+            title="Wen Xuan"
+            info="Logistics Director"
           ></team-card>
         </vue-grid-item>
         <vue-grid-item :class="$style.centeritem">
           <team-card
-            image="jon.jpg"
-            title="Jon Koo"
-            info="RoboClash IC"
+            image="Yujie.jpg"
+            title="Yu Jie"
+            info="Publicity Director"
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <team-card image="Allison.jpg" 
-          title="Allison Yee" 
-          info="Multi-Media" 
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Laverne.JPG"
-            title="Laverne"
-            info="Publicity Director"
-          ></team-card>
-        </vue-grid-item>
-        <vue-grid-item :class="$style.centeritem">
-          <team-card
-            image="Zayne.jpg"
-            title="Zayne"
-            info="Logistics Director"
+          <team-card image="Joel.jpg" 
+          title="Joel" 
+          info="Training Director" 
           ></team-card>
         </vue-grid-item>
       </vue-grid-row>
@@ -199,7 +250,8 @@
       <!-- <span :class="$style.smallspan">the family</span> -->
     </div>
     <div :class="$style.family">
-      <img src="soarfamily2023.JPG" />
+      <p style="text-align: center">25/26 EXCO photo coming soon! In the meantime, please appreciate the beautiful ppl of 24/25 EXCO!</p>
+      <img src="exco_photo.JPG" />
     </div>
 
     <home-section image="hangout.svg" flip>
@@ -231,6 +283,14 @@
     </home-section>
   </div>
 </template>
+<div>
+  <p>Sponsorship</p>
+  <img src="lionbot.png" alt="Sponsorship Logo" width="100" height="50">
+</div>
+
+
+
+
 
 <script lang="ts">
 import { mapState } from 'vuex';

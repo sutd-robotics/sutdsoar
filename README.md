@@ -6,6 +6,10 @@
 
 <p align="center"><a href="LICENSE" ><img src="https://img.shields.io/github/license/sutd-robotics/sutdsoar?style=for-the-badge"/></a> <a href="https://app.netlify.com/sites/sutdsoar/deploys"><img src="https://api.netlify.com/api/v1/badges/6cb418d5-1817-41c1-8336-7a984c495843/deploy-status"></a></p>
 
+## Website Documentation
+
+[SUTD SOAR Website Documentation.pdf](https://github.com/user-attachments/files/19529713/SUTD.SOAR.Website.Documentation.pdf)
+
 ## Usage
 
 - Development:
