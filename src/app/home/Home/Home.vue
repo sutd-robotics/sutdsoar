@@ -290,8 +290,6 @@
 
 
 
-
-
 <script lang="ts">
 import { mapState } from 'vuex';
 import Stage from '../components/Stage/Stage.vue';
