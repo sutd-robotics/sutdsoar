@@ -60,7 +60,7 @@
     <vue-grid>
       <vue-grid-row>
         <vue-grid-item :class="$style.centeritem">
-          <project-card :class="$style.cardsize" image="/images/soarchallenge.jpg" title="Soar Challenge">
+          <project-card :class="$style.cardsize" image="soarchallenge.jpg" title="Soar Challenge">
             <p>
               SOAR Challenge aims to introduce robotics in a fun and engaging way.
               Participants will hone their basic robotics skills in a series of workshops, build a robot, and face-off in a challenge. 
